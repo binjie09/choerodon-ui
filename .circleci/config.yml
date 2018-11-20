@@ -17,7 +17,7 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: npm test
+      - run: ./node_modules/jest/bin/jest.js --maxWorkers=2 --config .jest.js --debug
 
   release_publish:
     docker:
