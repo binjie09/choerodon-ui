@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import animation from '../_util/openAnimation';
 import CollapsePanel from './CollapsePanel';
 import RcCollapse from '../rc-components/collapse';
-import { getPrefixCls, getConfig } from '../configure';
+import { getPrefixCls, getConfig } from '../configure/utils';
 import LocaleReceiver from '../locale-provider/LocaleReceiver';
 import defaultLocale from '../locale-provider/default';
 

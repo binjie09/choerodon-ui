@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import Dialog, { ModalFuncProps } from './Modal';
 import Button from '../button';
 import { getConfirmLocale } from './locale';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface SidebarState {
   open: boolean;

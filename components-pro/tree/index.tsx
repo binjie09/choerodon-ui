@@ -12,7 +12,8 @@ import C7NTree, {
   TreeProps as C7NTreeProps,
 } from 'choerodon-ui/lib/tree';
 import autobind from 'choerodon-ui/pro/lib/_util/autobind';
-import DataSet from '../data-set/DataSet';
+import DataSet from '@buildrun/dataset';
+
 import { getKey, getTreeNodes, NodeRenderer, TreeNodeRenderer} from './util';
 import { BooleanValue, DataSetSelection } from '../data-set/enum';
 import Spin from '../spin';

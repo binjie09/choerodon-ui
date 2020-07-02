@@ -1,7 +1,7 @@
 import { FunctionComponent, ReactNode } from 'react';
 import isFunction from 'lodash/isFunction';
+import { Record } from '@buildrun/dataset';
 import { ColumnProps } from './Column';
-import Record from '../data-set/Record';
 import { ColumnLock } from './enum';
 
 export interface ExpandedRowProps {
@@ -12,11 +12,11 @@ export interface ExpandedRowProps {
   children?:
     | ReactNode
     | ((
-        columns: ColumnProps[],
-        record: Record,
-        isExpanded?: boolean,
-        lock?: ColumnLock | boolean,
-      ) => ReactNode);
+    columns: ColumnProps[],
+    record: Record,
+    isExpanded?: boolean,
+    lock?: ColumnLock | boolean,
+  ) => ReactNode);
 }
 
 const ExpandedRow: FunctionComponent<ExpandedRowProps> = props => {

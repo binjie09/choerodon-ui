@@ -7,8 +7,15 @@ import Progress from '../progress';
 import { UploadFile, UploadListProps } from './interface';
 import Animate from '../animate';
 import { ProgressType } from '../progress/enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 import { previewImage } from './utils';
+
+// https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL
+const previewFile = (file: File, callback: Function) => {
+  const reader = new FileReader();
+  reader.onloadend = () => callback(reader.result);
+  reader.readAsDataURL(file);
+};
 
 const isImageUrl = (url: string): boolean => {
   return /^data:image\//.test(url) || /\.(webp|svg|png|gif|jpg|jpeg)$/.test(url);

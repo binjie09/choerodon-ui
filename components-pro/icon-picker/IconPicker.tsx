@@ -4,15 +4,15 @@ import { action, computed, isArrayLike, observable, runInAction } from 'mobx';
 import { observer } from 'mobx-react';
 import omit from 'lodash/omit';
 import flatten from 'lodash/flatten';
+import { stopEvent } from '@buildrun/dataset/lib/event-manager';
 import KeyCode from 'choerodon-ui/lib/_util/KeyCode';
-import { getConfig } from 'choerodon-ui/lib/configure';
+import { getConfig } from 'choerodon-ui/lib/configure/utils';
 import TriggerField, { TriggerFieldProps } from '../trigger-field/TriggerField';
 import Icon from '../icon';
 import Tabs from '../tabs';
 import { $l } from '../locale-context';
 import IconCategory from './IconCategory';
 import autobind from '../_util/autobind';
-import { stopEvent } from '../_util/EventManager';
 
 const COLUMNS = 5;
 

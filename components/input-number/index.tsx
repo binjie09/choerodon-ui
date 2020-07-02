@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import RcInputNumber from '../rc-components/input-number';
 import { AbstractInputProps } from '../input/Input';
 import { Size } from '../_util/enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface InputNumberProps extends AbstractInputProps {
   prefixCls?: string;

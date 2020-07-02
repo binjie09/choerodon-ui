@@ -12,23 +12,23 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import { action, observable } from 'mobx';
 import { observer } from 'mobx-react';
+import { isEmpty } from '@buildrun/dataset';
+import { preventDefault, stopPropagation } from '@buildrun/dataset/lib/event-manager';
+import { FieldFormat } from '@buildrun/dataset/lib/data-set/enum';
+import { ValidatorProps } from '@buildrun/dataset/lib/validator/rules';
 import KeyCode from 'choerodon-ui/lib/_util/KeyCode';
 import { pxToRem, toPx } from 'choerodon-ui/lib/_util/UnitConvertor';
-import { getConfig } from 'choerodon-ui/lib/configure';
+import { getConfig } from 'choerodon-ui/lib/configure/utils';
 import { WaitType } from '../core/enum';
 import { FormField, FormFieldProps } from '../field/FormField';
 import autobind from '../_util/autobind';
-import isEmpty from '../_util/isEmpty';
 import isIE from '../_util/isIE';
 import Icon from '../icon';
-import { ValidatorProps } from '../validator/rules';
-import { preventDefault, stopPropagation } from '../_util/EventManager';
 import measureTextWidth from '../_util/measureTextWidth';
 import Animate from '../animate';
 import Tooltip from '../tooltip/Tooltip';
 import { GroupItemCategory, ValueChangeAction } from './enum';
 import { ShowHelp } from '../field/enum';
-import { FieldFormat } from '../data-set/enum';
 
 let PLACEHOLDER_SUPPORT;
 

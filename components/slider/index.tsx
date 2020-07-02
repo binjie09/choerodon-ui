@@ -1,7 +1,7 @@
 import React, { Component, CSSProperties, ReactElement, ReactNode } from 'react';
 import Tooltip from '../tooltip';
 import RcSlider, { Handle as RcHandle, Range as RcRange } from '../rc-components/slider';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface SliderMarks {
   [key: number]:

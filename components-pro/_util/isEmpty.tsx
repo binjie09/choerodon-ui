@@ -1,3 +1,1 @@
-export default function isEmpty(value: any, allowBlank: boolean = false): boolean {
-  return value === null || value === undefined || (allowBlank ? false : value === '');
-}
+export { default } from '@buildrun/dataset/lib/is-empty';

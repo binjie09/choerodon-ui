@@ -1,13 +1,12 @@
 import React, { cloneElement, Component, ReactElement, ReactNode } from 'react';
 import { observer } from 'mobx-react';
+import DataSet, { Field, Record } from '@buildrun/dataset';
+import { Fields } from '@buildrun/dataset/lib/data-set/Field';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
-import { getProPrefixCls } from 'choerodon-ui/lib/configure';
-import DataSet from '../../data-set/DataSet';
-import Record from '../../data-set/Record';
+import { getProPrefixCls } from 'choerodon-ui/lib/configure/utils';
 import { ElementProps } from '../../core/ViewComponent';
 import Button, { ButtonProps } from '../../button/Button';
 import { PaginationProps } from '../../pagination/Pagination';
-import Field, { Fields } from '../../data-set/Field';
 import { ButtonColor, FuncType } from '../../button/enum';
 import Modal from '../../modal';
 import Form from '../../form/Form';

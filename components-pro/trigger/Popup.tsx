@@ -7,7 +7,7 @@ import isElement from 'lodash/isElement';
 import ClassNames from 'classnames';
 import Align from 'choerodon-ui/lib/align';
 import Portal from 'choerodon-ui/lib/rc-components/util/Portal';
-import { getProPrefixCls } from 'choerodon-ui/lib/configure';
+import { getProPrefixCls } from 'choerodon-ui/lib/configure/utils';
 import Animate from '../animate';
 import ViewComponent, { ViewComponentProps } from '../core/ViewComponent';
 import PopupInner from './PopupInner';

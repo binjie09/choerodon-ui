@@ -20,8 +20,8 @@ import {
   DropResult,
   ResponderProvided,
 } from 'react-beautiful-dnd';
-import { getConfig, getProPrefixCls } from 'choerodon-ui/lib/configure';
-import warning from 'choerodon-ui/lib/_util/warning';
+import { getConfig, getProPrefixCls } from 'choerodon-ui/lib/configure/utils';
+import DataSet, { Record, warning } from '@buildrun/dataset';
 import { pxToRem, toPx } from 'choerodon-ui/lib/_util/UnitConvertor';
 import measureScrollbar from 'choerodon-ui/lib/_util/measureScrollbar';
 import KeyCode from 'choerodon-ui/lib/_util/KeyCode';
@@ -29,8 +29,6 @@ import ReactResizeObserver from 'choerodon-ui/lib/_util/resizeObserver';
 import Column, { ColumnProps, defaultMinWidth } from './Column';
 import TableRow, { TableRowProps } from './TableRow';
 import TableHeaderCell, { TableHeaderCellProps } from './TableHeaderCell';
-import DataSet from '../data-set/DataSet';
-import Record from '../data-set/Record';
 import Field from '../data-set/Field';
 import { TransportProps } from '../data-set/Transport';
 import TableStore, { DRAG_KEY } from './TableStore';

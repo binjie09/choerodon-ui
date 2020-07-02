@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import ScrollNumber from './ScrollNumber';
 import Animate from '../animate';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export { ScrollNumberProps } from './ScrollNumber';
 

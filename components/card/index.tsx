@@ -1,14 +1,14 @@
 import React, { Children, Component, CSSProperties, MouseEventHandler, ReactNode } from 'react';
 import classNames from 'classnames';
 import omit from 'lodash/omit';
+import { warning } from '@buildrun/dataset';
 import { Size } from '../_util/enum';
 import Grid from './Grid';
 import Meta from './Meta';
 import Tabs from '../tabs';
 import { throttleByAnimationFrameDecorator } from '../_util/throttleByAnimationFrame';
-import warning from '../_util/warning';
 import addEventListener from '../_util/addEventListener';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export { CardGridProps } from './Grid';
 export { CardMetaProps } from './Meta';

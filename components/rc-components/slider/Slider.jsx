@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import warning from '../../_util/warning';
+import { warning } from '@buildrun/dataset';
 import Track from './common/Track';
 import createSlider from './common/createSlider';
 import * as utils from './utils';

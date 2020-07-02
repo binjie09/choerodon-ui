@@ -2,9 +2,9 @@ import C7nSkeleton, { SkeletonProps as C7nSkeletonProps } from 'choerodon-ui/lib
 import { observer } from 'mobx-react';
 import React from 'react';
 import omit from 'lodash/omit';
-import { DataSetStatus } from '../data-set/enum';
 import DataSetComponent, { DataSetComponentProps } from '../data-set/DataSetComponent';
 import SkeletonButton from './Button';
+import { DataSetStatus } from '@buildrun/dataset/lib/data-set/enum';
 import SkeletonInput from './Input';
 import Avatar from './Avatar';
 

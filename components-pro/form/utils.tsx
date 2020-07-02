@@ -1,6 +1,5 @@
 import isNumber from 'lodash/isNumber';
-import DataSet from '../data-set/DataSet';
-import Record from '../data-set/Record';
+import DataSet, { Record } from '@buildrun/dataset';
 import { LabelLayout } from './enum';
 
 export const defaultLabelWidth: number = 100;

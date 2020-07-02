@@ -6,7 +6,7 @@ import { ButtonType } from '../button/Button';
 import LocaleReceiver from '../locale-provider/LocaleReceiver';
 import defaultLocale from '../locale-provider/default';
 import { Size } from '../_util/enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface PopconfirmProps extends AbstractTooltipProps {
   title: ReactNode;

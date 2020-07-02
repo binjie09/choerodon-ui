@@ -4,10 +4,10 @@ import { observer } from 'mobx-react';
 import omit from 'lodash/omit';
 import classNames from 'classnames';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
+import DataSet from '@buildrun/dataset';
 import { ColumnProps } from './Column';
 import TableContext from './TableContext';
 import { ElementProps } from '../core/ViewComponent';
-import DataSet from '../data-set/DataSet';
 import { getAlignByField } from './utils';
 import { ColumnAlign } from './enum';
 

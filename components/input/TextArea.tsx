@@ -12,7 +12,7 @@ import omit from 'lodash/omit';
 import classNames from 'classnames';
 import { AbstractInputProps } from './Input';
 import calculateNodeHeight from './calculateNodeHeight';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 function onNextFrame(cb: () => void) {
   if (window.requestAnimationFrame) {

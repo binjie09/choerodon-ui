@@ -6,7 +6,7 @@ import Icon from '../icon';
 import Select, { SelectProps } from '../select';
 import Pagination from '../pagination';
 import Tooltip from '../tooltip';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 const Option = Select.Option;
 

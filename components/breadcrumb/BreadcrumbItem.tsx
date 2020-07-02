@@ -2,7 +2,7 @@ import React, { ReactNode, useState, useCallback } from 'react';
 import classNames from 'classnames';
 import DropDown, { DropDownProps } from '../dropdown';
 import { Placements } from '../dropdown/enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 import Icon from '../icon';
 import List, { ListProps } from '../list';
 import buildPlacements from './placements';

@@ -3,9 +3,9 @@ import classNames from 'classnames';
 import omit from 'lodash/omit';
 import Animate from '../animate';
 import addEventListener from '../_util/addEventListener';
-import { getPrefixCls } from '../configure';
 import getScroll from '../_util/getScroll';
 import scrollTo from '../_util/scrollTo';
+import { getPrefixCls } from '../configure/utils';
 
 function getDefaultTarget() {
   return window;

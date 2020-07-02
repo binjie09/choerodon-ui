@@ -1,10 +1,10 @@
 import React, { Children, cloneElement, Component, ReactElement, ReactNode } from 'react';
 import classNames from 'classnames';
+import { warning } from '@buildrun/dataset';
 import DropdownButton from './dropdown-button';
-import warning from '../_util/warning';
 import RcDropdown from '../rc-components/dropdown';
-import { getPrefixCls } from '../configure';
 import { Placements } from './enum';
+import { getPrefixCls } from '../configure/utils';
 
 export interface DropDownProps {
   trigger?: ('click' | 'hover' | 'contextMenu')[];

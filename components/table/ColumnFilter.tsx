@@ -6,7 +6,7 @@ import { Item as MenuItem } from '../rc-components/menu';
 import { UNSELECTABLE_ATTRIBUTE, UNSELECTABLE_STYLE } from '../rc-components/select/util';
 import { getColumnKey } from './util';
 import { Size } from '../_util/enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface ColumnFilterProps<T> {
   prefixCls?: string;

@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import omit from 'lodash/omit';
 import Responsive, { BreakpointMap } from '../responsive/Responsive';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface RowProps extends HTMLAttributes<HTMLDivElement> {
   gutter?: number | BreakpointMap;

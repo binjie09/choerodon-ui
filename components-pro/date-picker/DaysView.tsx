@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 import moment, { Moment } from 'moment';
 import classNames from 'classnames';
 import noop from 'lodash/noop';
+import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
+import { stopEvent } from '@buildrun/dataset/lib/event-manager';
 import ViewComponent, { ViewComponentProps } from '../core/ViewComponent';
 import autobind from '../_util/autobind';
 import Icon from '../icon';
 import { DatePickerKeyboardEvent, RenderFunction, TimeStep } from './DatePicker';
 import { ViewMode } from './enum';
-import { FieldType } from '../data-set/enum';
 import { $l } from '../locale-context';
-import { stopEvent } from '../_util/EventManager';
 
 export function alwaysValidDate() {
   return true;

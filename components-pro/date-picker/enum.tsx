@@ -1,3 +1,5 @@
+export { TimeUnit } from '@buildrun/dataset/lib/enum';
+
 export const enum ViewMode {
   time = 'time',
   dateTime = 'dateTime',
@@ -6,11 +8,4 @@ export const enum ViewMode {
   month = 'month',
   year = 'year',
   decade = 'decade',
-}
-
-export const enum TimeUnit {
-  'hour' = 'h',
-  'minute' = 'm',
-  'second' = 's',
-  'a' = 'a',
 }

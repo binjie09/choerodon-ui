@@ -5,7 +5,7 @@ import omit from 'lodash/omit';
 import Icon from '../icon';
 import CheckableTag from './CheckableTag';
 import Animate from '../animate';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export { CheckableTagProps } from './CheckableTag';
 

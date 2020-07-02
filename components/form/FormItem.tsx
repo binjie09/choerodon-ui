@@ -2,13 +2,13 @@ import React, { Children, Component, CSSProperties, ReactElement, ReactNode } fr
 import { findDOMNode } from 'react-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import { warning } from '@buildrun/dataset';
 import { ColProps } from '../grid/col';
-import warning from '../_util/warning';
 import { FIELD_DATA_PROP, FIELD_META_PROP } from './constants';
 import PureRenderMixin from '../rc-components/util/PureRenderMixin';
 import Animate from '../animate';
 import { FormItemValidateStatus } from './enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface FormItemProps {
   prefixCls?: string;

@@ -10,7 +10,7 @@ import classNames from 'classnames';
 import shallowEqual from 'lodash/isEqual';
 import CheckboxGroup, { CheckboxGroupContext } from './Group';
 import RcCheckbox from '../rc-components/checkbox';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface AbstractCheckboxProps<T> {
   prefixCls?: string;

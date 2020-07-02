@@ -2,15 +2,15 @@
 import React, { Component, MouseEventHandler } from 'react';
 import moment, { Moment } from 'moment';
 import classNames from 'classnames';
+import { warning } from '@buildrun/dataset';
 import Button from '../button';
 import Icon from '../icon';
-import warning from '../_util/warning';
 import interopDefault from '../_util/interopDefault';
 import { RangePickerPresetRange, RangePickerValue } from './interface';
 import RangeCalendar from '../rc-components/calendar/RangeCalendar';
 import RcDatePicker from '../rc-components/calendar/Picker';
 import { Size } from '../_util/enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface RangePickerState {
   value?: RangePickerValue;

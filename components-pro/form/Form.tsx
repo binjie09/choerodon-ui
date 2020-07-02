@@ -19,18 +19,17 @@ import isString from 'lodash/isString';
 import noop from 'lodash/noop';
 import defaultTo from 'lodash/defaultTo';
 import { AxiosInstance } from 'axios';
+import DataSet, { Axios as axios, Record } from '@buildrun/dataset';
+import { Form as IForm } from '@buildrun/dataset/lib/interfaces';
 import Responsive from 'choerodon-ui/lib/responsive/Responsive';
-import { getConfig, getProPrefixCls } from 'choerodon-ui/lib/configure';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
 import isFunction from 'lodash/isFunction';
 import isArray from 'lodash/isArray';
-import axios from '../axios';
+import { getConfig, getProPrefixCls } from 'choerodon-ui/lib/configure/utils';
 import autobind from '../_util/autobind';
 import { FormField, FormFieldProps, getFieldsById } from '../field/FormField';
 import FormContext from './FormContext';
 import DataSetComponent, { DataSetComponentProps } from '../data-set/DataSetComponent';
-import DataSet from '../data-set/DataSet';
-import Record from '../data-set/Record';
 import { LabelAlign, LabelLayout, ResponsiveKeys } from './enum';
 import {
   defaultColumns,
@@ -170,7 +169,7 @@ const labelLayoutPropTypes = PropTypes.oneOf([
 ]);
 
 @observer
-export default class Form extends DataSetComponent<FormProps> {
+export default class Form extends DataSetComponent<FormProps> implements IForm {
   static displayName = 'Form';
 
   static FormVirtualGroup = FormVirtualGroup;

@@ -8,7 +8,7 @@ import RcMention, {
   toEditorState,
   toString,
 } from '../rc-components/editor-mention';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export type MentionPlacement = 'top' | 'bottom';
 

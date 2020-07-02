@@ -3,7 +3,7 @@ import { Moment } from 'moment';
 import { Size } from '../_util/enum';
 import Select from '../select';
 import { Button, Group, RadioChangeEvent } from '../radio';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 const Option = Select.Option;
 

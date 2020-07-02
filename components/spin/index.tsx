@@ -7,7 +7,7 @@ import Animate from '../animate';
 import Progress from '../progress/progress';
 import { Size } from '../_util/enum';
 import { ProgressType } from '../progress/enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export type SpinIndicator = ReactElement<any>;
 

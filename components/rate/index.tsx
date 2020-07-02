@@ -2,7 +2,7 @@ import React, { Component, CSSProperties, ReactNode } from 'react';
 import PropTypes from 'prop-types';
 import Icon from '../icon';
 import RcRate from '../rc-components/rate';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface RateProps {
   prefixCls?: string;

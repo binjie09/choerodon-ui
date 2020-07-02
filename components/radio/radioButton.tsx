@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { AbstractCheckboxProps } from '../checkbox/Checkbox';
 import Radio from './radio';
 import { RadioChangeEvent } from './interface';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export type RadioButtonProps = AbstractCheckboxProps<RadioChangeEvent>;
 

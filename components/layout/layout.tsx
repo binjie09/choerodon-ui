@@ -2,7 +2,7 @@ import React, { Component, ComponentClass, FunctionComponent, HTMLAttributes } f
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { SiderProps } from './Sider';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface BasicProps extends HTMLAttributes<HTMLDivElement> {
   prefixCls?: string;

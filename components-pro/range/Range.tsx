@@ -2,10 +2,10 @@ import React, { ReactNode } from 'react';
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import omit from 'lodash/omit';
+import { EventManager } from '@buildrun/dataset';
+import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
 import { NumberField, NumberFieldProps } from '../number-field/NumberField';
 import autobind from '../_util/autobind';
-import EventManager from '../_util/EventManager';
-import { FieldType } from '../data-set/enum';
 
 export interface RangeProps extends NumberFieldProps {
   /**

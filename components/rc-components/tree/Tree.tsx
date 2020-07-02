@@ -1,7 +1,17 @@
 // TODO: https://www.w3.org/TR/2017/NOTE-wai-aria-practices-1.1-20171214/examples/treeview/treeview-2/treeview-2a.html
 // Fully accessibility support
+/**
+ * most of it is move form the rc-tree ts lint pass the source code so there add the ts ignore
+ */
+
+
+// tslint:disable
+// @ts-nocheck
 
 import * as React from 'react';
+import PropTypes from 'prop-types';
+import KeyCode from 'rc-util/lib/KeyCode';
+import { warning } from '@buildrun/dataset';
 import classNames from 'classnames';
 import KeyCode from '../../_util/KeyCode';
 import warning from '../../_util/warning';

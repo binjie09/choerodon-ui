@@ -1,7 +1,7 @@
 import { Children, isValidElement, ReactNode } from 'react';
-import DataSet from '../data-set/DataSet';
-import { DataSetSelection, FieldType } from '../data-set/enum';
-import { FieldProps } from '../data-set/Field';
+import DataSet from '@buildrun/dataset';
+import { DataSetSelection, FieldType } from '@buildrun/dataset/lib/data-set/enum';
+import { FieldProps } from '@buildrun/dataset/lib/data-set/Field';
 import OptGroup, { OptGroupProps } from './OptGroup';
 import Option, { OptionProps } from './Option';
 

@@ -4,7 +4,7 @@ import Button from '../button';
 import { ButtonGroupProps } from '../button/ButtonGroup';
 import Icon from '../icon';
 import Dropdown, { DropDownProps } from './dropdown';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 const ButtonGroup = Button.Group;
 

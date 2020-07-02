@@ -14,36 +14,32 @@ import { isMoment, Moment } from 'moment';
 import { observer } from 'mobx-react';
 import noop from 'lodash/noop';
 import isPlainObject from 'lodash/isPlainObject';
-import KeyCode from 'choerodon-ui/lib/_util/KeyCode';
 import warning from 'choerodon-ui/lib/_util/warning';
-import { getConfig, getProPrefixCls } from 'choerodon-ui/lib/configure';
 import Row from 'choerodon-ui/lib/row';
 import Col from 'choerodon-ui/lib/col';
+import { findBindFields } from '@buildrun/dataset/lib/utils';
+import DataSet, { Field, formatString, isEmpty, isSame, Record } from '@buildrun/dataset';
+import { FieldFormat, FieldTrim, FieldType, RecordStatus } from '@buildrun/dataset/lib/data-set/enum';
+import Validator, { CustomValidator, ValidationMessages } from '@buildrun/dataset/lib/validator/Validator';
+import { FormField as IFormField } from '@buildrun/dataset/lib/interfaces';
+import ValidationResult from '@buildrun/dataset/lib/validator/ValidationResult';
+import { ValidatorProps } from '@buildrun/dataset/lib/validator/rules';
+import Validity from '@buildrun/dataset/lib/validator/Validity';
+import KeyCode from 'choerodon-ui/lib/_util/KeyCode';
+import { getConfig, getProPrefixCls } from 'choerodon-ui/lib/configure/utils';
 import autobind from '../_util/autobind';
-import DataSet from '../data-set/DataSet';
-import Record from '../data-set/Record';
-import Field from '../data-set/Field';
-import { findBindFields } from '../data-set/utils';
-import Validator, { CustomValidator, ValidationMessages } from '../validator/Validator';
-import Validity from '../validator/Validity';
 import FormContext from '../form/FormContext';
 import DataSetComponent, { DataSetComponentProps } from '../data-set/DataSetComponent';
 import Icon from '../icon';
 import Tooltip from '../tooltip';
 import Form from '../form/Form';
-import isEmpty from '../_util/isEmpty';
 import * as ObjectChainValue from '../_util/ObjectChainValue';
-import { FieldFormat, FieldTrim, FieldType, RecordStatus } from '../data-set/enum';
-import ValidationResult from '../validator/ValidationResult';
 import { ShowHelp } from './enum';
-import { ValidatorProps } from '../validator/rules';
 import { FIELD_SUFFIX } from '../form/utils';
 import { LabelLayout } from '../form/enum';
 import Animate from '../animate';
 import CloseButton from './CloseButton';
 import { fromRangeValue, getDateFormatByField, toMultipleValue, toRangeValue } from './utils';
-import isSame from '../_util/isSame';
-import formatString from '../formatter/formatString';
 import formatCurrency from '../formatter/formatCurrency';
 
 const map: { [key: string]: FormField<FormFieldProps>[]; } = {};
@@ -222,7 +218,7 @@ export interface FormFieldProps extends DataSetComponentProps {
   fieldClassName?: string;
 }
 
-export class FormField<T extends FormFieldProps> extends DataSetComponent<T> {
+export class FormField<T extends FormFieldProps> extends DataSetComponent<T> implements IFormField {
   static contextType = FormContext;
 
   static propTypes = {

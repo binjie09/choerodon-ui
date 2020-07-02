@@ -1,9 +1,11 @@
 import React, { ReactNode } from 'react';
 import { observer } from 'mobx-react';
 import { action, observable } from 'mobx';
+import { isSame } from '@buildrun/dataset';
+import { stopEvent } from '@buildrun/dataset/lib/event-manager';
 import { ProgressType } from 'choerodon-ui/lib/progress/enum';
-import { getConfig } from 'choerodon-ui/lib/configure';
 import KeyCode from 'choerodon-ui/lib/_util/KeyCode';
+import { getConfig } from 'choerodon-ui/lib/configure/utils';
 import { TextField, TextFieldProps } from '../text-field/TextField';
 import Icon from '../icon';
 import { open } from '../modal-container/ModalContainer';
@@ -15,8 +17,6 @@ import { Size } from '../core/enum';
 import message from '../message';
 import exception from '../_util/exception';
 import autobind from '../_util/autobind';
-import { stopEvent } from '../_util/EventManager';
-import isSame from '../_util/isSame';
 
 export interface IntlFieldProps extends TextFieldProps {
   modalProps?: ModalProps;

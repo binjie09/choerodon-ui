@@ -16,8 +16,8 @@ import Icon from '../icon';
 import Progress from '../progress';
 import { ProgressType } from '../progress/enum';
 import { Size } from '../_util/enum';
-import { getPrefixCls } from '../configure';
 import { EventDataNode, DataNode } from '../rc-components/tree/interface';
+import { getPrefixCls } from '../configure/utils';
 
 export { TreeNode };
 

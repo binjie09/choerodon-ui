@@ -10,15 +10,15 @@ import React, {
 } from 'react';
 import { findDOMNode } from 'react-dom';
 import classNames from 'classnames';
+import { warning } from '@buildrun/dataset';
 import Icon from '../icon';
-import warning from '../_util/warning';
 import isFlexSupported from '../_util/isFlexSupported';
 import RcTabs, { TabContent, TabPane } from '../rc-components/tabs';
 import ScrollableInkTabBar from '../rc-components/tabs/ScrollableInkTabBar';
 import { generateKey } from '../rc-components/tabs/utils';
 import { Size } from '../_util/enum';
 import { TabsPosition, TabsType } from './enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface TabsProps {
   activeKey?: string;

@@ -16,7 +16,7 @@ import Icon from '../icon';
 import RcCascader from '../rc-components/cascader';
 import KeyCode from '../_util/KeyCode';
 import { Size } from '../_util/enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 import LocaleReceiver from '../locale-provider/LocaleReceiver';
 import enUS from '../rc-components/cascader/locale/en_US';
 

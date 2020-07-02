@@ -1,9 +1,9 @@
 import { observer } from 'mobx-react';
 import { computed } from 'mobx';
+import { ValidationMessages } from '@buildrun/dataset/lib/validator/Validator';
+import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
 import { TextField, TextFieldProps } from '../text-field/TextField';
-import { ValidationMessages } from '../validator/Validator';
 import { $l } from '../locale-context';
-import { FieldType } from '../data-set/enum';
 
 export interface EmailFieldProps extends TextFieldProps {}
 

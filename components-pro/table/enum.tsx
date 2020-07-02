@@ -1,11 +1,7 @@
+export { ColumnAlign } from '@buildrun/dataset/lib/enum';
+
 export const enum ColumnLock {
   left = 'left',
-  right = 'right',
-}
-
-export const enum ColumnAlign {
-  left = 'left',
-  center = 'center',
   right = 'right',
 }
 

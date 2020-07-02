@@ -9,7 +9,7 @@ import React, {
 import classNames from 'classnames';
 import TimelineItem from './TimelineItem';
 import Icon from '../icon';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface TimelineProps {
   prefixCls?: string;

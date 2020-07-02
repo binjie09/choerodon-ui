@@ -5,12 +5,12 @@ import classNames from 'classnames';
 import noop from 'lodash/noop';
 import scrollIntoView from 'scroll-into-view-if-needed';
 import smoothScrollIntoView from 'smooth-scroll-into-view-if-needed';
+import { warning } from '@buildrun/dataset';
 import Pagination from '../pagination';
 import Icon from '../icon';
 import Spin, { SpinProps } from '../spin';
 import LocaleReceiver from '../locale-provider/LocaleReceiver';
 import defaultLocale from '../locale-provider/default';
-import warning from '../_util/warning';
 import FilterDropdown from './filterDropdown';
 import createStore, { Store } from './createStore';
 import SelectionBox from './SelectionBox';
@@ -47,6 +47,7 @@ import FilterBar from './FilterBar';
 import { VALUE_OR } from './FilterSelect';
 import RcTable from '../rc-components/table';
 import { Size } from '../_util/enum';
+import { getPrefixCls } from '../configure/utils';
 
 function findBodyDom(dom: Element | HTMLDivElement, reg: RegExp): any {
   if (dom.childElementCount > 0) {

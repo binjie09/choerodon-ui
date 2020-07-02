@@ -1,9 +1,9 @@
-import React, { Component, ReactElement, ReactNode } from 'react';
+import React, { PureComponent, Component, ReactElement, ReactNode } from 'react';
 import { observer } from 'mobx-react';
-import { getProPrefixCls } from 'choerodon-ui/lib/configure';
+import DataSet from '@buildrun/dataset';
+import { getProPrefixCls } from 'choerodon-ui/lib/configure/utils';
 import FilterSelect from './FilterSelect';
 import ColumnFilter from './ColumnFilter';
-import DataSet from '../../data-set/DataSet';
 import { $l } from '../../locale-context';
 import { ButtonProps } from '../../button/Button';
 import { PaginationProps } from '../../pagination/Pagination';

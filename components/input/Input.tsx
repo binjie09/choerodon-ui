@@ -15,7 +15,7 @@ import Search from './Search';
 import TextArea from './TextArea';
 import Icon from '../icon';
 import { Size } from '../_util/enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 function fixControlledValue(value: undefined | null | string) {
   if (typeof value === 'undefined' || value === null) {

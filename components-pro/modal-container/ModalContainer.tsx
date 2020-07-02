@@ -4,19 +4,18 @@ import { action, computed, observable, runInAction } from 'mobx';
 import { observer } from 'mobx-react';
 import findLast from 'lodash/findLast';
 import noop from 'lodash/noop';
-import EventManager from 'choerodon-ui/lib/_util/EventManager';
-import measureScrollbar from 'choerodon-ui/lib/_util/measureScrollbar';
-import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
-import warning from 'choerodon-ui/lib/_util/warning';
-import { getProPrefixCls } from 'choerodon-ui/lib/configure';
 import ModalManager, { DrawerOffsets, IModalContainer } from '../modal-manager';
-import Modal, { ModalProps } from '../modal/Modal';
-import Animate from '../animate';
 import Mask from './Mask';
-import { stopEvent } from '../_util/EventManager';
 import { suffixCls } from '../modal/utils';
 
 const { containerInstances } = ModalManager;
+import { warning } from '@buildrun/dataset';
+import EventManager, { stopEvent } from '@buildrun/dataset/lib/event-manager';
+import measureScrollbar from 'choerodon-ui/lib/_util/measureScrollbar';
+import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
+import { getProPrefixCls } from 'choerodon-ui/lib/configure/utils';
+import Modal, { ModalProps, MousePosition, destroyFns } from '../modal/Modal';
+import Animate from '../animate';
 
 function getArrayIndex(array, index) {
   if (array.length > index) {

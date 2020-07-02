@@ -1,12 +1,12 @@
 import React, { ReactNode } from 'react';
 import { Moment } from 'moment';
 import classNames from 'classnames';
+import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
+import { stopEvent } from '@buildrun/dataset/lib/event-manager';
 import autobind from '../_util/autobind';
 import Icon from '../icon';
 import { ViewMode } from './enum';
 import DaysView, { alwaysValidDate } from './DaysView';
-import { FieldType } from '../data-set/enum';
-import { stopEvent } from '../_util/EventManager';
 
 export default class YearsView extends DaysView {
   static displayName = 'YearsView';

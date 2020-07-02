@@ -1,8 +1,8 @@
 import React, { Component, CSSProperties } from 'react';
 import debounce from 'lodash/debounce';
 import classNames from 'classnames';
-import { getPrefixCls } from '../configure';
 import { matchMediaPolifill } from '../_util/mediaQueryListPolyfill';
+import { getPrefixCls } from '../configure/utils';
 
 // matchMedia polyfill for
 // https://github.com/WickyNilliams/enquire.js/issues/82

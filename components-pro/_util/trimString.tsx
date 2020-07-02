@@ -1,4 +1,4 @@
-import { FieldTrim } from '../data-set/enum';
+import { FieldTrim } from '@buildrun/dataset/lib/data-set/enum';
 
 export default function trimString(value: string, fieldTrim?: FieldTrim): string {
   if (fieldTrim) {

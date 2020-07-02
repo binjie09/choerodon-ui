@@ -2,14 +2,13 @@ import React, { ReactNode } from 'react';
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import { action, observable, runInAction } from 'mobx';
+import { isSameLike, Record } from '@buildrun/dataset';
 import { Select, SelectProps } from '../select/Select';
 import Option from '../option/Option';
 import OptGroup from '../option/OptGroup';
 import TransferList from './TransferList';
 import TransferOperation from './TransferOperation';
 import autobind from '../_util/autobind';
-import Record from '../data-set/Record';
-import isSameLike from '../_util/isSameLike';
 
 export interface TransferProps extends SelectProps {
   titles?: [ReactNode, ReactNode];

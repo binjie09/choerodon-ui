@@ -1,8 +1,8 @@
 import * as React from 'react';
 import omit from 'lodash/omit';
 import classNames from 'classnames';
-import { getPrefixCls } from '../configure';
 import Element, { SkeletonElementProps } from './Element';
+import { getPrefixCls } from '../configure/utils';
 
 export interface AvatarProps extends Omit<SkeletonElementProps, 'shape'> {
   shape?: 'circle' | 'square';

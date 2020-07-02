@@ -3,12 +3,13 @@ import moment, { Moment } from 'moment';
 import classNames from 'classnames';
 import { action, computed, observable } from 'mobx';
 import { observer } from 'mobx-react';
+import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
+import { stopEvent } from '@buildrun/dataset/lib/event-manager';
+import { TimeUnit } from '@buildrun/dataset/lib/enum';
 import autobind from '../_util/autobind';
-import { TimeUnit, ViewMode } from './enum';
+import { ViewMode } from './enum';
 import DaysView, { alwaysValidDate } from './DaysView';
-import { FieldType } from '../data-set/enum';
 import { $l } from '../locale-context';
-import { stopEvent } from '../_util/EventManager';
 
 const stepMapping = {
   [TimeUnit.hour]: 'hour',

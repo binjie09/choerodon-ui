@@ -8,7 +8,7 @@ import UploadList from './UploadList';
 import { UploadChangeParam, UploadFile, UploadLocale, UploadProps, UploadState } from './interface';
 import { fileToObject, genPercentAdd, getFileItem, removeFileItem, T } from './utils';
 import RcUpload from '../rc-components/upload';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export { UploadProps };
 

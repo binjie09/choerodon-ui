@@ -1,7 +1,7 @@
 import React, { Children, cloneElement } from 'react';
 import classnames from 'classnames';
+import { warning } from '@buildrun/dataset';
 import { generateKey, getDataAttr } from './utils';
-import warning from '../../_util/warning';
 import Ripple from '../../ripple';
 
 export default {

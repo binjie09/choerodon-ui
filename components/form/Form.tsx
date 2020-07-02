@@ -10,14 +10,14 @@ import React, {
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import omit from 'lodash/omit';
-import warning from '../_util/warning';
+import { warning } from '@buildrun/dataset';
 import FormItem from './FormItem';
 import { FIELD_DATA_PROP, FIELD_META_PROP } from './constants';
 import { createFormField } from '../rc-components/form';
 import createDOMForm from '../rc-components/form/createDOMForm';
 import PureRenderMixin from '../rc-components/util/PureRenderMixin';
 import { FormLayout } from './enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface FormCreateOption<T> {
   onFieldsChange?: (props: T, fields: Array<any>) => void;

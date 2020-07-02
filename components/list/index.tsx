@@ -9,7 +9,7 @@ import { Size } from '../_util/enum';
 import Pagination from '../pagination';
 import { Row } from '../grid';
 import Item from './Item';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export { ListItemProps, ListItemMetaProps } from './Item';
 

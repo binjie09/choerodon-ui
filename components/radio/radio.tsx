@@ -6,7 +6,7 @@ import RadioGroup from './group';
 import RadioButton from './radioButton';
 import { RadioChangeEvent, RadioGroupContext, RadioProps } from './interface';
 import RcCheckbox from '../rc-components/checkbox';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export default class Radio extends Component<RadioProps, {}> {
   static displayName = 'Radio';

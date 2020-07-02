@@ -14,7 +14,7 @@ import LocaleReceiver from '../locale-provider/LocaleReceiver';
 import defaultLocale from '../locale-provider/default';
 import RcSelect, { OptGroup, Option } from '../rc-components/select';
 import { SelectMode } from './enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface AbstractSelectProps {
   prefixCls?: string;

@@ -1,11 +1,11 @@
 import React, { CSSProperties, ReactNode } from 'react';
 import { observer } from 'mobx-react';
 import { action, computed, observable } from 'mobx';
+import { EventManager } from '@buildrun/dataset';
+import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
+import { ValidationMessages } from '@buildrun/dataset/lib/validator/Validator';
 import TriggerField, { TriggerFieldProps } from '../trigger-field/TriggerField';
 import autobind from '../_util/autobind';
-import EventManager from '../_util/EventManager';
-import { FieldType } from '../data-set/enum';
-import { ValidationMessages } from '../validator/Validator';
 import { $l } from '../locale-context';
 
 function getNodeRect(node): ClientRect {

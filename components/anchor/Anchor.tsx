@@ -5,9 +5,9 @@ import classNames from 'classnames';
 import addEventListener from '../_util/addEventListener';
 import Affix from '../affix';
 import AnchorLink from './AnchorLink';
-import { getPrefixCls } from '../configure';
 import scrollTo from '../_util/scrollTo';
 import getScroll from '../_util/getScroll';
+import { getPrefixCls } from '../configure/utils';
 
 function getDefaultContainer() {
   return window;

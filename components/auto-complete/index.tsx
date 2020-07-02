@@ -13,7 +13,7 @@ import InputElement from './InputElement';
 import { OptGroup, Option } from '../rc-components/select';
 import { Size } from '../_util/enum';
 import { SelectMode } from '../select/enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface DataSourceItemObject {
   value: string;

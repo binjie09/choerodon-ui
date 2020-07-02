@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 const stringOrNumber = PropTypes.oneOfType([PropTypes.string, PropTypes.number]);
 const objectOrNumber = PropTypes.oneOfType([PropTypes.object, PropTypes.number]);

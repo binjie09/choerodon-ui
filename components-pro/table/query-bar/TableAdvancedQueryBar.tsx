@@ -1,10 +1,9 @@
 import React, { cloneElement, Component, CSSProperties, ReactElement, ReactNode } from 'react';
 import { observer } from 'mobx-react';
 import isFunction from 'lodash/isFunction';
+import DataSet, { Field } from '@buildrun/dataset';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
-import { getProPrefixCls } from 'choerodon-ui/lib/configure';
-import Field from '../../data-set/Field';
-import DataSet from '../../data-set';
+import { getProPrefixCls } from 'choerodon-ui/lib/configure/utils';
 import Button from '../../button';
 import TableContext from '../TableContext';
 import { ElementProps } from '../../core/ViewComponent';

@@ -19,22 +19,19 @@ import {
   runInAction,
   toJS,
 } from 'mobx';
+import DataSet, { Field, Record, isSameLike } from '@buildrun/dataset';
+import { DataSetEvents } from '@buildrun/dataset/lib/data-set/enum';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
 import KeyCode from 'choerodon-ui/lib/_util/KeyCode';
 import Icon from '../../icon';
-import Field from '../../data-set/Field';
 import { TextField, TextFieldProps } from '../../text-field/TextField';
-import DataSet from '../../data-set/DataSet';
-import Record from '../../data-set/Record';
 import autobind from '../../_util/autobind';
 import { FormFieldProps, RenderProps } from '../../field/FormField';
 import measureTextWidth from '../../_util/measureTextWidth';
 import { getEditorByField } from '../utils';
 import ObserverSelect, { SelectProps } from '../../select/Select';
 import Option, { OptionProps } from '../../option/Option';
-import isSameLike from '../../_util/isSameLike';
-import { DataSetEvents } from '../../data-set/enum';
-import { processFieldValue } from '../../data-set/utils';
+import processFieldValue from '../../_util/processFieldValue';
 
 export interface FilterSelectProps extends TextFieldProps {
   paramName?: string;
@@ -342,7 +339,8 @@ export default class FilterSelect extends TextField<FilterSelectProps> {
   }
 
   @autobind
-  handleEnterDown() {}
+  handleEnterDown() {
+  }
 
   @action
   setSelectField(value) {
@@ -358,7 +356,8 @@ export default class FilterSelect extends TextField<FilterSelectProps> {
     return [];
   }
 
-  syncValueOnBlur() {}
+  syncValueOnBlur() {
+  }
 
   @action
   setQueryValue(fieldName: string, value: any) {

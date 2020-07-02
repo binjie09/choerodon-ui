@@ -6,7 +6,7 @@ import defaultLocale from './locale/en_US';
 import interopDefault from '../_util/interopDefault';
 import RcTimePicker from '../rc-components/time-picker';
 import { Size } from '../_util/enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export function generateShowHourMinuteSecond(format: string) {
   // Ref: http://momentjs.com/docs/#/parsing/string-format/

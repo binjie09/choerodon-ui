@@ -3,7 +3,7 @@ import { findDOMNode } from 'react-dom';
 import classNames from 'classnames';
 import Icon from '../icon';
 import Animate from '../animate';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface AlertProps {
   /**

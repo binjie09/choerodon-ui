@@ -6,10 +6,10 @@ import Icon from '../icon';
 import { conductExpandParent } from '../rc-components/tree/util';
 import { EventDataNode, DataNode } from '../rc-components/tree/interface';
 import { convertDataToEntities, convertTreeToData } from '../rc-components/tree/utils/treeUtil';
-import { getPrefixCls } from '../configure';
 
 import Tree, { TreeProps, C7ndTreeNodeAttribute } from './index';
 import { calcRangeKeys, convertDirectoryKeysToNodes } from './utils/dictUtil';
+import { getPrefixCls } from '../configure/utils';
 
 export type ExpandAction = false | 'click' | 'doubleClick';
 
@@ -54,7 +54,7 @@ class DirectoryTree extends React.Component<DirectoryTreeProps, DirectoryTreeSta
   }
 
   state: DirectoryTreeState;
-  
+
   tree: Tree;
 
 

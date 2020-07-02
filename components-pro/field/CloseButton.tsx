@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
+import { stopEvent, stopPropagation } from '@buildrun/dataset/lib/event-manager';
 import Icon from '../icon';
-import { stopEvent, stopPropagation } from '../_util/EventManager';
 
 export interface CloseButtonProps {
   value: any;

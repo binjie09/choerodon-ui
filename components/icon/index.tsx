@@ -1,7 +1,7 @@
 import React, { CSSProperties, FocusEventHandler, MouseEventHandler } from 'react';
 import classNames from 'classnames';
-import { getConfig } from '../configure';
 import createFromIconfontCN from './IconFont';
+import { getConfig } from '../configure/utils';
 
 export interface IconProps {
   type: string;

@@ -1,6 +1,6 @@
 import { observer } from 'mobx-react';
-import { NumberField, NumberFieldProps, FormatNumberFuncOptions } from '../number-field/NumberField';
-import { FieldType } from '../data-set/enum';
+import { FieldType, NumberFieldProps, FormatNumberFuncOptions } from '@buildrun/dataset/lib/data-set/enum';
+import { NumberField } from '../number-field/NumberField';
 import formatCurrency from '../formatter/formatCurrency';
 
 export interface CurrencyProps extends NumberFieldProps {

@@ -8,7 +8,7 @@ import Search from './search';
 import LocaleReceiver from '../locale-provider/LocaleReceiver';
 import defaultLocale from '../locale-provider/default';
 import { TransferDirection } from './enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export { TransferListProps } from './list';
 export { TransferOperationProps } from './operation';

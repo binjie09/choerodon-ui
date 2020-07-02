@@ -8,7 +8,7 @@ import noop from 'lodash/noop';
 import getScroll from '../_util/getScroll';
 import { throttleByAnimationFrameDecorator } from '../_util/throttleByAnimationFrame';
 import addEventListener from '../_util/addEventListener';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 function getTargetRect(target: HTMLElement | Window | null): ClientRect {
   return target !== window

@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import isNumber from 'lodash/isNumber';
 import Icon from '../icon';
 import { Size } from '../_util/enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface AvatarProps {
   /** Shape of avatar, options:`circle`, `square` */

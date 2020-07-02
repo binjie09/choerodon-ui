@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { action } from 'mobx';
+import DataSet from '@buildrun/dataset';
 import KeyCode from 'choerodon-ui/lib/_util/KeyCode';
-import { getConfig } from 'choerodon-ui/lib/configure';
+import { getConfig } from 'choerodon-ui/lib/configure/utils';
 import { pick } from 'lodash';
-import DataSet from '../data-set/DataSet';
-import Table, { TableProps } from '../table/Table';
 import TableProfessionalBar from '../table/query-bar/TableProfessionalBar';
 import { SelectionMode, TableMode, TableQueryBarType } from '../table/enum';
-import { DataSetSelection } from '../data-set/enum';
+import { DataSetSelection } from '@buildrun/dataset/lib/data-set/enum';
+import Table, { TableProps } from '../table/Table';
 import { LovConfig } from './Lov';
 import { ColumnProps } from '../table/Column';
 
 export interface LovViewProps {
   dataSet: DataSet;
-  config: LovConfig;
   tableProps?: TableProps;
+  config: LovConfig & { queryBar?: TableQueryBarType | TableQueryBarHook };
   multiple: boolean;
   values: any[];
   onDoubleClick: () => void;

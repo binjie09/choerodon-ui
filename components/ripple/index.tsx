@@ -1,6 +1,6 @@
 import React, { Children, PureComponent, ReactChild } from 'react';
 import RippleChild from './RippleChild';
-import { getConfig, getPrefixCls } from '../configure';
+import { getConfig, getPrefixCls } from '../configure/utils';
 
 export interface RippleProps {
   prefixCls?: string;

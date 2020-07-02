@@ -3,8 +3,8 @@ import classNames from 'classnames';
 import omit from 'lodash/omit';
 import PropTypes from 'prop-types';
 import Icon from '../icon';
-import { getPrefixCls } from '../configure';
 import { matchMediaPolifill } from '../_util/mediaQueryListPolyfill';
+import { getPrefixCls } from '../configure/utils';
 
 if (typeof window !== 'undefined') {
   // const matchMediaPolyfill = (mediaQuery: string): MediaQueryList => {

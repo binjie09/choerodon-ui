@@ -6,6 +6,12 @@ import isEqual from 'lodash/isEqual';
 import isString from 'lodash/isString';
 import isFunction from 'lodash/isFunction';
 import { action, computed, observable, toJS } from 'mobx';
+import DataSet, { Record } from '@buildrun/dataset';
+import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
+import { FieldProps } from '@buildrun/dataset/lib/data-set/Field';
+import { stopEvent } from '@buildrun/dataset/lib/event-manager';
+import { getLovPara } from '@buildrun/dataset/lib/stores/utils';
+import lovStore from '@buildrun/dataset/lib/stores/LovCodeStore';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
 import KeyCode from 'choerodon-ui/lib/_util/KeyCode';
 import { Size } from 'choerodon-ui/lib/_util/enum';
@@ -14,21 +20,14 @@ import Icon from '../icon';
 import { open } from '../modal-container/ModalContainer';
 import LovView from './LovView';
 import { ModalProps } from '../modal/Modal';
-import DataSet from '../data-set/DataSet';
-import Record from '../data-set/Record';
-import lovStore from '../stores/LovCodeStore';
 import autobind from '../_util/autobind';
-import { stopEvent } from '../_util/EventManager';
 import { ParamMatcher, SearchMatcher, Select, SelectProps } from '../select/Select';
 import { ColumnAlign, TableQueryBarType, SelectionMode } from '../table/enum';
-import { FieldType } from '../data-set/enum';
 import { LovFieldType, ViewMode, TriggerMode } from './enum';
 import Button, { ButtonProps } from '../button/Button';
 import { ButtonColor, FuncType } from '../button/enum';
 import { $l } from '../locale-context';
-import { getLovPara } from '../stores/utils';
 import { TableQueryBarHook, TableProps } from '../table/Table';
-import { FieldProps } from '../data-set/Field';
 
 export type Events = { [key: string]: Function };
 
@@ -67,7 +66,6 @@ export type LovConfig = {
   placeholder?: string;
   editableFlag?: 'Y' | 'N';
   queryColumns?: number;
-  queryBar?: TableQueryBarType | TableQueryBarHook;
 };
 
 export interface LovProps extends SelectProps, ButtonProps {
@@ -340,10 +338,10 @@ export default class Lov extends Select<LovProps> {
     }
   }
 
-  getConfig() {
+  getConfig(): LovConfig & { queryBar?: TableQueryBarType | TableQueryBarHook } | undefined {
     const { lovCode } = this;
     if (lovCode) {
-      return lovStore.getConfig(lovCode);
+      return lovStore.getConfig(lovCode) as LovConfig & { queryBar?: TableQueryBarType | TableQueryBarHook };
     }
   }
 

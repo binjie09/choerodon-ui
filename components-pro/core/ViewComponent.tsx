@@ -8,12 +8,12 @@ import defer from 'lodash/defer';
 import merge from 'lodash/merge';
 import noop from 'lodash/noop';
 import classes from 'component-classes';
-import { getProPrefixCls } from 'choerodon-ui/lib/configure';
+import { Lang } from '@buildrun/dataset/lib/locale-context/enum';
+import normalizeLanguage from '@buildrun/dataset/lib/normalize-language';
+import { getProPrefixCls } from 'choerodon-ui/lib/configure/utils';
+import localeContext from '../locale-context';
 import autobind from '../_util/autobind';
 import { Size } from './enum';
-import normalizeLanguage from '../_util/normalizeLanguage';
-import { Lang } from '../locale-context/enum';
-import localeContext from '../locale-context';
 
 //
 // 组件对外开放的事件函数名以 onXXX 命名. 尽量减少对外开放的事件，统一由数据来关联

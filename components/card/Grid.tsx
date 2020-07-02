@@ -1,6 +1,6 @@
 import React, { CSSProperties, SFC } from 'react';
 import classNames from 'classnames';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface CardGridProps {
   prefixCls?: string;

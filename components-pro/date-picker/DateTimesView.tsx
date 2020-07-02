@@ -1,12 +1,12 @@
 import React, { ReactNode } from 'react';
 import moment, { Moment } from 'moment';
 import noop from 'lodash/noop';
+import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
 import { DatePickerKeyboardEvent } from './DatePicker';
 import DaysView from './DaysView';
 import TimesView from './TimesView';
 import autobind from '../_util/autobind';
 import { ViewMode } from './enum';
-import { FieldType } from '../data-set/enum';
 import { $l } from '../locale-context';
 import { getDateFormatByFieldType } from '../field/utils';
 

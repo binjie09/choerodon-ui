@@ -2,7 +2,7 @@ import React, { Component, ReactNode } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { C7NAnchor } from './Anchor';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface AnchorLinkProps {
   prefixCls?: string;

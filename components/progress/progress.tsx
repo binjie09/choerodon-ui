@@ -6,7 +6,7 @@ import { Circle } from '../rc-components/progress';
 import Loading from './Loading';
 import { Size } from '../_util/enum';
 import { ProgressPosition, ProgressStatus, ProgressType } from './enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface ProgressProps {
   prefixCls?: string;

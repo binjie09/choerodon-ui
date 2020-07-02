@@ -1,8 +1,9 @@
 /* eslint-disable camelcase */
-import { Lang } from './enum';
+import { Lang } from '@buildrun/dataset/lib/locale-context/enum';
+import { Locale as DataSetLocale } from '@buildrun/dataset/lib/locale-context/locale';
 import zh_CN from './zh_CN';
 
-export interface Locale {
+export interface Locale extends DataSetLocale {
   lang: Lang;
   Table: {
     show_cached_seletion;
@@ -71,16 +72,6 @@ export interface Locale {
     ok;
     cancel;
   };
-  DataSet: {
-    unsaved_data_confirm;
-    invalid_query_dataset;
-    delete_selected_row_confirm;
-    delete_all_row_confirm;
-    query_failure;
-    submit_success;
-    submit_failure;
-    cannot_add_record_when_head_no_current;
-  };
   DatePicker: {
     value_missing;
     value_missing_no_label;
@@ -134,21 +125,6 @@ export interface Locale {
     value_missing;
     value_missing_no_label;
     type_mismatch;
-  };
-  Validator: {
-    bad_input;
-    pattern_mismatch;
-    range_overflow;
-    range_underflow;
-    step_mismatch;
-    step_mismatch_between;
-    too_long;
-    too_short;
-    type_mismatch;
-    value_missing;
-    value_missing_no_label;
-    unique;
-    unknown;
   };
   Icon: {
     icons;

@@ -1,10 +1,11 @@
+// @ts-nocheck
 /* eslint-disable no-lonely-if */
 /**
  * Legacy code. Should avoid to use if you are new to import these code.
  */
 
 import React from 'react';
-import warning from '../../_util/warning';
+import { warning } from '@buildrun/dataset';
 import TreeNode, { TreeNodeProps } from './TreeNode';
 import { NodeElement, Key, DataNode, DataEntity, NodeInstance, FlattenNode, Direction } from './interface';
 import { TreeProps, AllowDrop } from './Tree';

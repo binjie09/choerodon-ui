@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Col } from '../grid';
 import { ColumnType, ListGridType } from './index';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface ListItemProps {
   className?: string;

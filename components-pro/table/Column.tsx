@@ -1,8 +1,7 @@
 import { Component, ComponentState, CSSProperties, ReactElement, ReactNode } from 'react';
 import PropTypes from 'prop-types';
 import { get } from 'mobx';
-import DataSet from '../data-set/DataSet';
-import Record from '../data-set/Record';
+import DataSet, { Record } from '@buildrun/dataset';
 import { FormFieldProps, Renderer } from '../field/FormField';
 import { ElementProps } from '../core/ViewComponent';
 import { ColumnAlign, ColumnLock, TableColumnTooltip } from './enum';

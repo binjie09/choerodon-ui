@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import { warning } from '@buildrun/dataset';
 import { TreeSelectProps } from './interface';
 import { SelectLocale } from '../select';
 import LocaleReceiver from '../locale-provider/LocaleReceiver';
-import warning from '../_util/warning';
 import RcTreeSelect, {
   SHOW_ALL,
   SHOW_CHILD,
@@ -11,7 +11,7 @@ import RcTreeSelect, {
   TreeNode,
 } from '../rc-components/tree-select';
 import { Size } from '../_util/enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export { TreeData, TreeSelectProps } from './interface';
 

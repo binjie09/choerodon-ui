@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { TreeNodeProps,EventDataNode } from 'choerodon-ui/lib/tree';
-import Record from '../data-set/Record';
-import DataSet from '../data-set/DataSet';
+import DataSet, { Record } from '@buildrun/dataset';
+
 
 export type IconType = React.ReactNode | ((props: TreeNodeProps) => React.ReactNode);
 export interface DataNode {

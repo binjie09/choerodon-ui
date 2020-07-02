@@ -8,7 +8,7 @@ import LargeSelect from './LargeSelect';
 import RcPagination from '../rc-components/pagination';
 import enUS from '../rc-components/pagination/locale/en_US';
 import Button from '../button/Button';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 function getSelect(size?: Size) {
   switch (size) {

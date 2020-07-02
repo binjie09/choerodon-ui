@@ -6,15 +6,15 @@ import debounce from 'lodash/debounce';
 import isString from 'lodash/isString';
 import { computed, runInAction } from 'mobx';
 import { observer } from 'mobx-react';
+import { DataSetStatus } from '@buildrun/dataset/lib/data-set/enum';
 import { ProgressType } from 'choerodon-ui/lib/progress/enum';
-import { getConfig } from 'choerodon-ui/lib/configure';
+import { getConfig } from 'choerodon-ui/lib/configure/utils';
 import Icon from '../icon';
 import FormContext from '../form/FormContext';
 import Progress from '../progress';
 import Ripple from '../ripple';
-import { ButtonColor, ButtonType, FuncType } from './enum';
-import { DataSetStatus } from '../data-set/enum';
 import { WaitType, Size } from '../core/enum';
+import { ButtonColor, ButtonShape, ButtonType, ButtonWaitType, FuncType } from './enum';
 import DataSetComponent, { DataSetComponentProps } from '../data-set/DataSetComponent';
 import autobind from '../_util/autobind';
 

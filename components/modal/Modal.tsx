@@ -7,7 +7,7 @@ import { getConfirmLocale } from './locale';
 import Dialog from '../rc-components/dialog';
 import addEventListener from '../_util/addEventListener';
 import Sidebar from './Sidebar';
-import { getPrefixCls, getConfig } from '../configure';
+import { getPrefixCls, getConfig } from '../configure/utils';
 
 let mousePosition: { x: number; y: number } | null;
 let mousePositionEventBinded: boolean;

@@ -2,7 +2,7 @@ import * as React from 'react';
 import omit from 'lodash/omit';
 import classNames from 'classnames';
 import Element, { SkeletonElementProps } from './Element';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface SkeletonInputProps extends Omit<SkeletonElementProps, 'size' | 'shape'> {
   size?: 'large' | 'small' | 'default';

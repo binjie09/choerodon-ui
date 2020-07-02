@@ -2,13 +2,13 @@ import React, { Component, CSSProperties } from 'react';
 import { findDOMNode } from 'react-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import { warning } from '@buildrun/dataset';
 import animation from '../_util/openAnimation';
-import warning from '../_util/warning';
 import SubMenu from './SubMenu';
 import Item from './MenuItem';
 import { SiderContext } from '../layout/Sider';
 import RcMenu, { Divider, ItemGroup } from '../rc-components/menu';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface SelectParam {
   key: string;

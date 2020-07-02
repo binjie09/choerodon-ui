@@ -1,6 +1,6 @@
 import React, { CSSProperties, ReactNode } from 'react';
 import classNames from 'classnames';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface DividerProps {
   prefixCls?: string;

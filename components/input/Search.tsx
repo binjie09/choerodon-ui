@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import Input, { InputProps } from './Input';
 import Button from '../button';
 import { Size } from '../_util/enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface SearchProps extends InputProps {
   inputPrefixCls?: string;

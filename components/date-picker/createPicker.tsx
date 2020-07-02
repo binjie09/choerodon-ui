@@ -2,15 +2,15 @@ import React, { Component, ComponentClass, MouseEvent } from 'react';
 import moment, { Moment } from 'moment';
 import classNames from 'classnames';
 import omit from 'lodash/omit';
+import { warning } from '@buildrun/dataset';
 import Button from '../button';
 import Icon from '../icon';
 import Input from '../input';
-import warning from '../_util/warning';
 import interopDefault from '../_util/interopDefault';
 import MonthCalendar from '../rc-components/calendar/MonthCalendar';
 import RcDatePicker from '../rc-components/calendar/Picker';
 import { Size } from '../_util/enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface PickerProps {
   value?: Moment;

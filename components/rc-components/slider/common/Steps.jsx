@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import warning from '../../../_util/warning';
+import { warning } from '@buildrun/dataset';
 
 const calcPoints = (vertical, marks, dots, step, min, max) => {
   warning(

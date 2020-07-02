@@ -1,4 +1,4 @@
-import { FieldType } from '../data-set/enum';
+import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
 import normalizeLanguage from '../_util/normalizeLanguage';
 import {
   getNumberFormatOptions,

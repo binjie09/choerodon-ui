@@ -1,5 +1,5 @@
+import { EventManager } from '@buildrun/dataset';
 import createDefaultSetter from './createDefaultSetter';
-import EventManager from './EventManager';
 import TaskRunner from './TaskRunner';
 
 function keep(fn, e) {

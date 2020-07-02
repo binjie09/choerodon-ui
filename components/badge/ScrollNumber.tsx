@@ -1,7 +1,7 @@
 import React, { Component, createElement, CSSProperties, ReactElement } from 'react';
 import omit from 'lodash/omit';
 import classNames from 'classnames';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 function getNumberArray(num: string | number | undefined) {
   return num

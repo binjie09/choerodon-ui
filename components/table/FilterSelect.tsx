@@ -6,7 +6,7 @@ import Select, { LabeledValue, OptionProps } from '../select';
 import { filterByInputValue, getColumnKey } from './util';
 import Checkbox from '../checkbox/Checkbox';
 import { SelectMode } from '../select/enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 const { Option, OptGroup } = Select;
 const PAIR_SPLIT = ':';

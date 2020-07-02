@@ -8,18 +8,18 @@ import omit from 'lodash/omit';
 import isPlainObject from 'lodash/isPlainObject';
 import defaultTo from 'lodash/defaultTo';
 import isNil from 'lodash/isNil';
+import { isEmpty } from '@buildrun/dataset';
+import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
+import { ValidationMessages } from '@buildrun/dataset/lib/validator/Validator';
+import { ValidatorProps } from '@buildrun/dataset/lib/validator/rules';
+import { getNearStepValues, getPrecision, MAX_SAFE_INTEGER, plus } from '@buildrun/dataset/lib/number-utils';
 import KeyCode from 'choerodon-ui/lib/_util/KeyCode';
-import { getConfig } from 'choerodon-ui/lib/configure';
+import { getConfig } from 'choerodon-ui/lib/configure/utils';
 import { TextField, TextFieldProps } from '../text-field/TextField';
 import autobind from '../_util/autobind';
 import keepRunning from '../_util/keepRunning';
 import Icon from '../icon';
-import { getNearStepValues, getPrecision, MAX_SAFE_INTEGER, plus } from './utils';
-import { ValidationMessages } from '../validator/Validator';
-import isEmpty from '../_util/isEmpty';
 import { $l } from '../locale-context';
-import { FieldType } from '../data-set/enum';
-import { ValidatorProps } from '../validator/rules';
 import defaultFormatNumber from '../formatter/formatNumber';
 
 function getCurrentValidValue(value: string): number {

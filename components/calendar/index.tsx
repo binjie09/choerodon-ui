@@ -7,7 +7,7 @@ import Header from './Header';
 import interopDefault from '../_util/interopDefault';
 import enUS from './locale/en_US';
 import FullCalendar from '../rc-components/calendar/FullCalendar';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export { HeaderProps } from './Header';
 

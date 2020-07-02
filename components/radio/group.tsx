@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import shallowEqual from 'lodash/isEqual';
 import Radio from './radio';
 import { RadioChangeEvent, RadioGroupProps, RadioGroupState } from './interface';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 function getCheckedValue(children: ReactNode) {
   let value = null;

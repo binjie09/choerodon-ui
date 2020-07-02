@@ -3,14 +3,14 @@ import { computed } from 'mobx';
 import { observer } from 'mobx-react';
 import classNames from 'classnames';
 import omit from 'lodash/omit';
+import { Record } from '@buildrun/dataset';
+import { stopPropagation } from '@buildrun/dataset/lib/event-manager';
 import ObserverCheckBox from '../check-box/CheckBox';
 import { $l } from '../locale-context';
-import Record from '../data-set/Record';
 import ObserverTextField from '../text-field/TextField';
 import Icon from '../icon';
 import { getItemKey, Select, SelectProps } from '../select/Select';
 import autobind from '../_util/autobind';
-import { stopPropagation } from '../_util/EventManager';
 import ViewComponent from '../core/ViewComponent';
 
 export interface TransferListProps extends SelectProps {
@@ -179,7 +179,8 @@ export default class TransferList extends Select<TransferListProps> {
     });
   }
 
-  removeLastValue() {}
+  removeLastValue() {
+  }
 
   @autobind
   handleBlur(e) {

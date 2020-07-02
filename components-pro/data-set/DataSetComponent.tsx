@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import omit from 'lodash/omit';
 import { computed } from 'mobx';
-import DataSet from './DataSet';
+import DataSet from '@buildrun/dataset';
+import { Lang } from '@buildrun/dataset/lib/locale-context/enum';
 import ViewComponent, { ViewComponentProps } from '../core/ViewComponent';
-import { Lang } from '../locale-context/enum';
 
 /**
  * 可绑定数据源的组件.

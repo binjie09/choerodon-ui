@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import omit from 'lodash/omit';
 import { action, runInAction } from 'mobx';
 import { observer } from 'mobx-react';
+import { BooleanValue } from '@buildrun/dataset/lib/data-set/enum';
 import { Radio, RadioProps } from '../radio/Radio';
-import { BooleanValue } from '../data-set/enum';
 
 export interface CheckBoxProps extends RadioProps {
   /**

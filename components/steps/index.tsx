@@ -2,7 +2,7 @@ import React, { Component, CSSProperties } from 'react';
 import PropTypes from 'prop-types';
 import RcSteps, { Step, StepGroup } from '../rc-components/steps';
 import { Size } from '../_util/enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface StepsProps {
   prefixCls?: string;

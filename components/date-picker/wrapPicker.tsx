@@ -5,7 +5,7 @@ import { generateShowHourMinuteSecond } from '../time-picker';
 import enUS from './locale/en_US';
 import TimePickerPanel from '../rc-components/time-picker/Panel';
 import { Size } from '../_util/enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 function getColumns({ showHour, showMinute, showSecond, use12Hours }: any) {
   let column = 0;

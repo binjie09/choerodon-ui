@@ -5,7 +5,7 @@ import Icon from '../icon';
 import Dialog, { ModalFuncProps } from './Modal';
 import ActionButton from './ActionButton';
 import { getConfirmLocale } from './locale';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 interface ConfirmDialogProps extends ModalFuncProps {
   afterClose?: () => void;

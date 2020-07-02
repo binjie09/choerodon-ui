@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import omit from 'lodash/omit';
 import RcSwitch from '../rc-components/switch';
 import { Size } from '../_util/enum';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface SwitchProps {
   prefixCls?: string;

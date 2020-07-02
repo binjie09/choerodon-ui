@@ -7,22 +7,21 @@ import isNil from 'lodash/isNil';
 import isNumber from 'lodash/isNumber';
 import classNames from 'classnames';
 import classes from 'component-classes';
+import { EventManager, isEmpty } from '@buildrun/dataset';
+import DataSetRequestError from '@buildrun/dataset/lib/data-set/DataSetRequestError';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
 import KeyCode from 'choerodon-ui/lib/_util/KeyCode';
-import { getConfig } from 'choerodon-ui/lib/configure';
+import { getConfig } from 'choerodon-ui/lib/configure/utils';
 import { MousePosition } from '../modal-manager';
 import ViewComponent, { ViewComponentProps } from '../core/ViewComponent';
 import Icon from '../icon';
 import autobind from '../_util/autobind';
 import Button, { ButtonProps } from '../button/Button';
-import EventManager from '../_util/EventManager';
-import isEmpty from '../_util/isEmpty';
 import { ButtonColor, FuncType } from '../button/enum';
 import asyncComponent, { AsyncCmpLoadingFunction } from '../_util/AsyncComponent';
 import message from '../message';
 import exception from '../_util/exception';
 import { $l } from '../locale-context';
-import DataSetRequestError from '../data-set/DataSetRequestError';
 import { suffixCls } from './utils';
 import { modalChildrenProps } from './interface';
 
@@ -489,6 +488,9 @@ export default class Modal extends ViewComponent<ModalProps> {
     const {
       footer = this.getDefaultFooter,
     } = this.props;
+    // const modalButtonProps = getConfig('modalButtonProps');
+
+    
 
     if (typeof footer === 'function') {
       return this.getWrappedFooter(footer(this.okBtn, this.cancelBtn));

@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'mini-store';
+import { warning } from '@buildrun/dataset';
 import TableCell from './TableCell';
-import warning from '../../_util/warning';
 
 class TableRow extends Component {
   static propTypes = {

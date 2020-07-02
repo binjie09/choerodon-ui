@@ -2,11 +2,11 @@ import * as React from 'react';
 import classNames from 'classnames';
 import Title, { SkeletonTitleProps } from './Title';
 import Paragraph, { SkeletonParagraphProps } from './Paragraph';
-import { getPrefixCls } from '../configure';
 import SkeletonButton from './Button';
 import Element from './Element';
 import SkeletonAvatar, { AvatarProps } from './Avatar';
 import SkeletonInput from './Input';
+import { getPrefixCls } from '../configure/utils';
 
 /* This only for skeleton internal. */
 interface SkeletonAvatarProps extends Omit<AvatarProps, 'active'> {}

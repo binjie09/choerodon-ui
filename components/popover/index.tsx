@@ -1,7 +1,7 @@
 import React, { Component, ReactNode } from 'react';
+import { warning } from '@buildrun/dataset';
 import Tooltip, { AbstractTooltipProps } from '../tooltip';
-import warning from '../_util/warning';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 export interface PopoverProps extends AbstractTooltipProps {
   title?: ReactNode;
