@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import moment, { Moment } from 'moment';
 import classNames from 'classnames';
 import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
-import { stopEvent } from '@buildrun/dataset/lib/event-manager';
+import { stopEvent } from '@buildrun/dataset';
 import { DatePickerKeyboardEvent } from './DatePicker';
 import DaysView from './DaysView';
 import { ViewMode } from './enum';

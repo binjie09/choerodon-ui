@@ -1,1 +1,1 @@
-export { default, Supports } from '@buildrun/dataset/lib/locale-context/supports';
+export { supports as default, Supports } from '@buildrun/dataset';

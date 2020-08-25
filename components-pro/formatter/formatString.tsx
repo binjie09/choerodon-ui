@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/format-string';
+export { formatString as default } from '@buildrun/dataset';

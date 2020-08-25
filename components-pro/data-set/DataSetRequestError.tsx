@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/data-set/DataSetRequestError';
+export { DataSetRequestError as default } from '@buildrun/dataset';

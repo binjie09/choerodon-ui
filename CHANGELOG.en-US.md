@@ -15,7 +15,8 @@ timeline: true
 
 ---
 
--💄 `<pro>DataSet`: DataSet into a library independently.
+- 💄 `<pro>DataSet`: DataSet into a library independently.
+- 💄 `<pro>DataSet`: Optimize global configuration and multi-language.
 - 💄 Context of some component into a library independently.
 - 🌟 `<pro>Select`: Added `selectAllButton` property.
 - 🌟 `<pro>SelectBox`: implement the `optionsFilter` `searchable` properties.

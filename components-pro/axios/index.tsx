@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/axios';
+export { Axios as default } from '@buildrun/dataset';

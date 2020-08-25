@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { runInAction } from 'mobx';
 import { observer } from 'mobx-react';
 import noop from 'lodash/noop';
-import { stopEvent } from '@buildrun/dataset/lib/event-manager';
+import { stopEvent } from '@buildrun/dataset';
 import KeyCode from 'choerodon-ui/lib/_util/KeyCode';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
 import Row from 'choerodon-ui/lib/row';

@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/stores';
+export { stores as default } from '@buildrun/dataset';

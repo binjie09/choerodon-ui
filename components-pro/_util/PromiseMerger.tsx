@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/promise-merger';
+export { PromiseMerger as default } from '@buildrun/dataset';

@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/cache/Yallist';
+export { Yallist as default } from '@buildrun/dataset';

@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/object-chain-value';
+export { ObjectChainValue as default } from '@buildrun/dataset';

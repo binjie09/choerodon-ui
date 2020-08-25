@@ -10,7 +10,7 @@ import { observer } from 'mobx-react';
 import { action, computed, isArrayLike, observable, runInAction, toJS } from 'mobx';
 import { Field, formatString, isSame, warning } from '@buildrun/dataset';
 import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
-import { stopEvent } from '@buildrun/dataset/lib/event-manager';
+import { stopEvent } from '@buildrun/dataset/lib';
 import { ValidatorProps } from '@buildrun/dataset/lib/validator/rules';
 import { ValidationMessages } from '@buildrun/dataset/lib/validator/Validator';
 import KeyCode from 'choerodon-ui/lib/_util/KeyCode';

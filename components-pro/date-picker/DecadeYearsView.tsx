@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { Moment } from 'moment';
 import classNames from 'classnames';
-import { stopEvent } from '@buildrun/dataset/lib/event-manager';
+import { stopEvent } from '@buildrun/dataset';
 import autobind from '../_util/autobind';
 import Icon from '../icon';
 import DaysView, { alwaysValidDate } from './DaysView';

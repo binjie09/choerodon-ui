@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/axios/cacheAdapterEnhancer';
+export { cacheAdapterEnhancer as default } from '@buildrun/dataset';

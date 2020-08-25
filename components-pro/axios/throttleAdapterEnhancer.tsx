@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/axios/throttleAdapterEnhancer';
+export { throttleAdapterEnhancer as default } from '@buildrun/dataset';

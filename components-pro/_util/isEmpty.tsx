@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/is-empty';
+export { isEmpty as default } from '@buildrun/dataset';

@@ -1,1 +1,1 @@
-export { default, preventDefault, stopEvent, stopPropagation } from '@buildrun/dataset/lib/event-manager';
+export { EventManager as default, preventDefault, stopEvent, stopPropagation } from '@buildrun/dataset';

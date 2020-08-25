@@ -2,7 +2,7 @@ import message from '../message';
 import exception from '../_util/exception';
 import { $l } from '../locale-context';
 
-export { FeedBack } from '@buildrun/dataset/lib/data-set/FeedBack';
+export { FeedBack } from '@buildrun/dataset';
 
 const defaultFeedback = {
   loadSuccess(_result: any) {},

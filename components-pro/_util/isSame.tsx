@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/is-same';
+export { isSame as default } from '@buildrun/dataset';

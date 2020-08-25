@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/locale-context/LocaleContext';
+export { LocaleContext as default } from '@buildrun/dataset';

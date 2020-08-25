@@ -4,7 +4,7 @@ import moment, { Moment } from 'moment';
 import classNames from 'classnames';
 import noop from 'lodash/noop';
 import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
-import { stopEvent } from '@buildrun/dataset/lib/event-manager';
+import { stopEvent } from '@buildrun/dataset';
 import ViewComponent, { ViewComponentProps } from '../core/ViewComponent';
 import autobind from '../_util/autobind';
 import Icon from '../icon';

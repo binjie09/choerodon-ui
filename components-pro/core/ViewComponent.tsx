@@ -9,7 +9,7 @@ import merge from 'lodash/merge';
 import noop from 'lodash/noop';
 import classes from 'component-classes';
 import { Lang } from '@buildrun/dataset/lib/locale-context/enum';
-import normalizeLanguage from '@buildrun/dataset/lib/normalize-language';
+import { normalizeLanguage } from '@buildrun/dataset';
 import { getProPrefixCls } from 'choerodon-ui/lib/configure/utils';
 import localeContext from '../locale-context';
 import autobind from '../_util/autobind';

@@ -1,1 +1,1 @@
-export { default, LovCodeStore } from '@buildrun/dataset/lib/stores/LovCodeStore';
+export { lovStore as default, LovCodeStore } from '@buildrun/dataset';

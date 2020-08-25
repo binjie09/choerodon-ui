@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/warning';
+export { warning as default } from '@buildrun/dataset';

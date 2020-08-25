@@ -1,7 +1,7 @@
 import React, { Component, Key, ReactElement, ReactNode } from 'react';
 import { action, observable } from 'mobx';
 import { observer } from 'mobx-react';
-import { stopEvent, stopPropagation } from '@buildrun/dataset/lib/event-manager';
+import { stopEvent, stopPropagation } from '@buildrun/dataset';
 import Menu, { Item } from 'choerodon-ui/lib/rc-components/menu';
 import Button from '../../button/Button';
 import Dropdown from '../../dropdown/Dropdown';

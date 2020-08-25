@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/validator/ValidationResult';
+export { ValidationResult as default } from '@buildrun/dataset';

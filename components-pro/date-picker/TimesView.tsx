@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { action, computed, observable } from 'mobx';
 import { observer } from 'mobx-react';
 import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
-import { stopEvent } from '@buildrun/dataset/lib/event-manager';
+import { stopEvent } from '@buildrun/dataset';
 import { TimeUnit } from '@buildrun/dataset/lib/enum';
 import autobind from '../_util/autobind';
 import { ViewMode } from './enum';

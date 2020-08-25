@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/data-set/Record';
+export { Record as default } from '@buildrun/dataset';

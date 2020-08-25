@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/data-set/DataSetSnapshot';
+export { DataSetSnapshot as default } from '@buildrun/dataset';

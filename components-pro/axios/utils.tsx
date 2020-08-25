@@ -1,1 +1,1 @@
-export { buildURLWithAxiosConfig, buildSortedURL, isCacheLike } from '@buildrun/dataset/lib/axios/utils';
+export { buildURLWithAxiosConfig, buildSortedURL, isCacheLike } from '@buildrun/dataset';

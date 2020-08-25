@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/promise-queue';
+export { PromiseQueue as default } from '@buildrun/dataset';
