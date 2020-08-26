@@ -1,52 +1,31 @@
 import { Children, Component, ReactElement } from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
+import { action } from 'mobx';
+import localeContext from 'choerodon-ui/pro/lib/locale-context';
+import defaults from 'choerodon-ui/pro/lib/locale-context/default';
+import { Locale as ProLocale } from 'choerodon-ui/pro/lib/locale-context/locale';
+import defaultsSupports, { Supports } from 'choerodon-ui/pro/lib/locale-context/supports';
 import interopDefault from '../_util/interopDefault';
-import { changeConfirmLocale, ModalLocale } from '../modal/locale';
 
 export interface Locale {
   locale: string;
+  Pro?: ProLocale;
   Pagination?: Object;
-  Cascader?: Object;
   DatePicker?: Object;
   TimePicker?: Object;
   Calendar?: Object;
   Table?: Object;
-  Modal?: ModalLocale;
+  Modal?: ProLocale['Modal'];
   Popconfirm?: Object;
   Transfer?: Object;
   Select?: Object;
   Upload?: Object;
-  imageCrop?: imageCrop;
-  performanceTable?: PerformanceTable;
-}
-
-export interface imageCrop {
-  editImage: string,
-  avatarUploadError: string,
-  avatarServerError: string,
-  avatarUpload: string,
-  avatarReminder: string,
-  preview: string,
-  reUpload: string,
-  imageTooLarge: string,
-  imageUploadError: string,
-  imageDragHere: string,
-  pleaseUpload: string,
-  uploadType: string,
-  picture: string,
-  cancelButton: string,
-  saveButton: string,
-  changeAvatar: string,
-}
-
-export interface PerformanceTable {
-  emptyMessage: string;
-  loading:string;
 }
 
 export interface LocaleProviderProps {
   locale: Locale;
+  supports?: Supports;
   children?: ReactElement<any>;
 }
 
@@ -84,24 +63,27 @@ export default class LocaleProvider extends Component<LocaleProviderProps, any> 
   componentWillMount() {
     const { locale } = this.props;
     setMomentLocale(locale);
-    this.componentDidUpdate();
+    this.updateContext();
   }
 
   componentWillReceiveProps(nextProps: LocaleProviderProps) {
     const { locale } = this.props;
     const nextLocale = nextProps.locale;
     if (locale !== nextLocale) {
-      setMomentLocale(nextProps.locale);
+      setMomentLocale(nextLocale);
     }
   }
 
   componentDidUpdate() {
-    const { locale } = this.props;
-    changeConfirmLocale(locale && locale.Modal);
+    this.updateContext();
   }
 
-  componentWillUnmount() {
-    changeConfirmLocale();
+  @action
+  updateContext() {
+    const { locale, supports = defaultsSupports } = this.props;
+    const { Pro = defaults } = locale;
+    localeContext.setLocale(Pro);
+    localeContext.setSupports(supports);
   }
 
   render() {
