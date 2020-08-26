@@ -24,12 +24,12 @@ export interface Locale {
 }
 
 export interface LocaleProviderProps {
-  locale: Locale;
+  locale?: Locale | null;
   supports?: Supports;
   children?: ReactElement<any>;
 }
 
-function setMomentLocale(locale: Locale) {
+function setMomentLocale(locale?: Locale | null) {
   if (locale && locale.locale) {
     interopDefault(moment).locale(locale.locale);
   } else {
@@ -81,7 +81,7 @@ export default class LocaleProvider extends Component<LocaleProviderProps, any> 
   @action
   updateContext() {
     const { locale, supports = defaultsSupports } = this.props;
-    const { Pro = defaults } = locale;
+    const { Pro = defaults } = locale || {};
     localeContext.setLocale(Pro);
     localeContext.setSupports(supports);
   }
