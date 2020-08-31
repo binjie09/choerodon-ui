@@ -1,3 +1,3 @@
-import React from 'react';
+import { FormContext } from '@choerodon/ui-shared';
 
-export default React.createContext({});
+export default FormContext;

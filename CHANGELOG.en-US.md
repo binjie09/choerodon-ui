@@ -15,6 +15,7 @@ timeline: true
 
 ---
 
+- 💄 Context of some component into a library independently.
 - 🌟 `<pro>Select`: Added `selectAllButton` property.
 - 🌟 `<pro>SelectBox`: implement the `optionsFilter` `searchable` properties.
 - 🌟 `<pro>TextField`: Added `valueChangeAction`, `wait`, `waitType` properties.

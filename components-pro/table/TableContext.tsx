@@ -1,4 +1,3 @@
-import React from 'react';
-import TableStore from './TableStore';
+import { TableContext } from '@choerodon/ui-shared';
 
-export default React.createContext<{ tableStore: TableStore }>({} as any);
+export default TableContext;

@@ -3,6 +3,7 @@
  * When util.js imports the TreeNode for tree generate will cause treeContextTypes be empty.
  */
 import React from 'react';
+import { TreeContext as SharedTreeContext } from '@choerodon/ui-shared';
 import {
   IconType,
   Key,
@@ -84,4 +85,5 @@ export interface TreeContextProps {
   onNodeDrop: NodeDragEventHandler;
 }
 
-export const TreeContext: React.Context<TreeContextProps | null> = React.createContext(null);
+// @ts-ignore
+export const TreeContext: React.Context<TreeContextProps | null> = SharedTreeContext;

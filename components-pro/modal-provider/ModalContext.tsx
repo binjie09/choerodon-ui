@@ -1,6 +1,3 @@
-import { createContext } from 'react';
-import noop from "lodash/noop";
-
-const ModalContext = createContext({ open: noop });
+import { ModalContext } from '@choerodon/ui-shared';
 
 export default ModalContext;
