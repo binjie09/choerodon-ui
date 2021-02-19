@@ -17,7 +17,7 @@ import isPlainObject from 'lodash/isPlainObject';
 import warning from 'choerodon-ui/lib/_util/warning';
 import Row from 'choerodon-ui/lib/row';
 import Col from 'choerodon-ui/lib/col';
-import { findBindFields } from '@buildrun/dataset/lib/utils';
+import { findBindFields } from '@buildrun/dataset/lib/data-set/utils';
 import DataSet, { Field, formatString, isEmpty, isSame, Record } from '@buildrun/dataset';
 import { FieldFormat, FieldTrim, FieldType, RecordStatus } from '@buildrun/dataset/lib/data-set/enum';
 import Validator, { CustomValidator, ValidationMessages } from '@buildrun/dataset/lib/validator/Validator';

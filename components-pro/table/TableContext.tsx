@@ -1,3 +1,3 @@
-import { TableContext } from '@choerodon/ui-shared';
+import { TableContext } from '@buildrun/ui-shared';
 
 export default TableContext;

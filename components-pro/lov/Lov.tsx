@@ -15,7 +15,7 @@ import lovStore from '@buildrun/dataset/lib/stores/LovCodeStore';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
 import KeyCode from 'choerodon-ui/lib/_util/KeyCode';
 import { Size } from 'choerodon-ui/lib/_util/enum';
-import { getConfig } from 'choerodon-ui/lib/configure';
+import { getConfig } from 'choerodon-ui/lib/configure/utils';
 import Icon from '../icon';
 import { open } from '../modal-container/ModalContainer';
 import LovView from './LovView';

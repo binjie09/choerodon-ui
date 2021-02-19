@@ -14,7 +14,7 @@ import isArray from 'lodash/isArray';
 import isString from 'lodash/isString';
 import classNames from 'classnames';
 
-import { getConfig, getProPrefixCls } from 'choerodon-ui/lib/configure';
+import { getConfig, getProPrefixCls } from 'choerodon-ui/lib/configure/utils';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
 import Icon from 'choerodon-ui/lib/icon';
 

@@ -1,6 +1,6 @@
 import React, { createContext, useMemo } from 'react';
 import { AxiosRequestConfig } from 'axios';
-import { getConfig } from 'choerodon-ui/lib/configure';
+import { getConfig } from 'choerodon-ui/lib/configure/utils';
 import DataSet from '../../../data-set';
 import { DataSetSelection, FieldType } from '../../../data-set/enum';
 

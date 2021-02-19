@@ -6,7 +6,7 @@ import isObject from 'lodash/isObject';
 import isEnumEmpty from 'lodash/isEmpty';
 import isArray from 'lodash/isArray';
 import Icon from 'choerodon-ui/lib/icon';
-import { getConfig } from 'choerodon-ui/lib/configure';
+import { getConfig } from 'choerodon-ui/lib/configure/utils';
 
 import isSampleEmpty from '../../../_util/isEmpty';
 import { $l } from '../../../locale-context';

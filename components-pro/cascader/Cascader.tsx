@@ -10,7 +10,7 @@ import { observer } from 'mobx-react';
 import { action, observable, computed, IReactionDisposer, isArrayLike, reaction, runInAction, toJS } from 'mobx';
 import { Menus, SingleMenu } from 'choerodon-ui/lib/rc-components/cascader';
 import KeyCode from 'choerodon-ui/lib/_util/KeyCode';
-import { getConfig } from 'choerodon-ui/lib/configure';
+import { getConfig } from 'choerodon-ui/lib/configure/utils';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
 import cloneDeep from 'lodash/cloneDeep';
 import isFunction from 'lodash/isFunction';

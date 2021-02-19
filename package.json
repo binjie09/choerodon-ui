@@ -48,7 +48,7 @@
     "lodash": ">=4.17.0"
   },
   "dependencies": {
-    "@choerodon/ui-shared": "1.0.0",
+    "@buildrun/ui-shared": "1.0.0",
     "@babel/runtime": "7.x",
     "@ctrl/tinycolor": "^3.2.0",
     "@types/react-beautiful-dnd": "^13.0.0",
