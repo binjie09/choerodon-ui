@@ -135,11 +135,12 @@ export default class Tooltip extends Component<TooltipProps, any> {
   getDisabledCompatibleChildren(element: ReactElement<any>) {
     const elementType = element.type as any
     if (
-      (( elementType.__Pro_BUTTON === true ||
-        elementType.__Pro_SWITCH === true ||
-        elementType.__Pro_CHECKBOX === true ||
-        (element.type as typeof Button).__ANT_BUTTON ||
-        element.type === 'button') &&
+      (( elementType.__PRO_BUTTON ||
+        elementType.__PRO_SWITCH ||
+        elementType.__PRO_CHECKBOX ||
+        elementType.__PRO_RADIO ||
+        elementType.__C7N_BUTTON ||
+        elementType === 'button') &&
         element.props.disabled
       ) &&
       element.props.disabled &&

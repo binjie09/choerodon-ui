@@ -26,7 +26,7 @@ import Spin from '../spin';
 import { stopEvent } from '../_util/EventManager';
 import normalizeOptions from '../option/normalizeOptions';
 import { $l } from '../locale-context';
-import * as ObjectChainValue from '../_util/ObjectChainValue';
+import ObjectChainValue from '../_util/ObjectChainValue';
 import isEmptyUtil from '../_util/isEmpty';
 import isSameLike from '../_util/isSameLike';
 import { OptionProps } from '../option/Option';

@@ -3,6 +3,7 @@ import { Config, ConfigKeys } from './config';
 import defaults from './default';
 
 export function getConfig(key: ConfigKeys): any {
+  // @ts-ignore
   const config = getDataSetConfig<Config>(key);
   if (config === undefined) {
     return defaults[key];

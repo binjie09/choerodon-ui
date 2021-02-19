@@ -1,4 +1,4 @@
-import React, { PureComponent, Component, ReactElement, ReactNode } from 'react';
+import React, { Component, ReactElement, ReactNode } from 'react';
 import { observer } from 'mobx-react';
 import DataSet from '@buildrun/dataset';
 import { getProPrefixCls } from 'choerodon-ui/lib/configure/utils';

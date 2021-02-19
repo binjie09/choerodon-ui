@@ -1,8 +1,8 @@
 export { 
     ICacheLike,
     Options,
-} from './cacheAdapterEnhancer';
+} from '@buildrun/dataset/lib/axios/cacheAdapterEnhancer';
 export {
     RecordedCache,
     Options as throttleOptions,
-} from './throttleAdapterEnhancer';
+} from '@buildrun/dataset/lib/axios/throttleAdapterEnhancer';

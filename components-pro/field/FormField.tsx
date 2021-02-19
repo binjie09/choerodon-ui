@@ -31,7 +31,7 @@ import DataSetComponent, { DataSetComponentProps } from '../data-set/DataSetComp
 import Icon from '../icon';
 import Tooltip from '../tooltip';
 import Form from '../form/Form';
-import * as ObjectChainValue from '../_util/ObjectChainValue';
+import ObjectChainValue from '../_util/ObjectChainValue';
 import { ShowHelp } from './enum';
 import { FIELD_SUFFIX } from '../form/utils';
 import { LabelLayout } from '../form/enum';

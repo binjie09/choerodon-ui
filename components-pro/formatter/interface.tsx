@@ -1,3 +1,3 @@
 export {
     FormatOptions,
-} from './formatString';
+} from '@buildrun/dataset/lib/format-string';

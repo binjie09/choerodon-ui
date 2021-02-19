@@ -8,7 +8,7 @@ import { pick } from 'lodash';
 import TableProfessionalBar from '../table/query-bar/TableProfessionalBar';
 import { SelectionMode, TableMode, TableQueryBarType } from '../table/enum';
 import { DataSetSelection } from '@buildrun/dataset/lib/data-set/enum';
-import Table, { TableProps } from '../table/Table';
+import Table, { TableProps, TableQueryBarHook } from '../table/Table';
 import { LovConfig } from './Lov';
 import { ColumnProps } from '../table/Column';
 

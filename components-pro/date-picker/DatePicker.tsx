@@ -647,7 +647,9 @@ export default class DatePicker extends TriggerField<DatePickerProps>
     const { min, max } = this;
     return {
       ...super.getValidatorProps(),
+      //@ts-ignore
       min,
+      //@ts-ignore
       max,
       format: this.getDateFormat(),
     };

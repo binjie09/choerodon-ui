@@ -103,6 +103,7 @@ const Icon: IIcon = React.forwardRef<HTMLSpanElement, IconComponentProps>((props
       );
 
       return (
+        // @ts-ignore
         <svg {...innerSvgProps} viewBox={viewBox}>
           {children}
         </svg>

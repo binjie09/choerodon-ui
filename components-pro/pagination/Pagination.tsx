@@ -157,6 +157,7 @@ export default class Pagination extends DataSetComponent<PaginationProps> {
     if (
       !dataSet?.props.modifiedCheck ||
       !dataSet.dirty ||
+      // @ts-ignore
       (await confirm(dataSet.props.modifiedCheckMessage || $l("DataSet", "unsaved_data_confirm"))) !== "cancel") {
       this.handleChange(this.page, Number(value));
     } else {

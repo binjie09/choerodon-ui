@@ -8,8 +8,6 @@ import omit from 'lodash/omit';
 import isObject from 'lodash/isObject';
 import isString from 'lodash/isString';
 import max from 'lodash/max';
-import omitBy from 'lodash/omitBy';
-import isUndefined from 'lodash/isUndefined';
 import { Record } from '@buildrun/dataset';
 import { DataSetEvents, RecordStatus } from '@buildrun/dataset/lib/data-set/enum';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';

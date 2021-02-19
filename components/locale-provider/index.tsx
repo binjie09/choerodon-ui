@@ -21,6 +21,32 @@ export interface Locale {
   Transfer?: Object;
   Select?: Object;
   Upload?: Object;
+  imageCrop?: imageCrop;
+  performanceTable?: PerformanceTable;
+}
+
+export interface imageCrop {
+  editImage: string,
+  avatarUploadError: string,
+  avatarServerError: string,
+  avatarUpload: string,
+  avatarReminder: string,
+  preview: string,
+  reUpload: string,
+  imageTooLarge: string,
+  imageUploadError: string,
+  imageDragHere: string,
+  pleaseUpload: string,
+  uploadType: string,
+  picture: string,
+  cancelButton: string,
+  saveButton: string,
+  changeAvatar: string,
+}
+
+export interface PerformanceTable {
+  emptyMessage: string;
+  loading:string;
 }
 
 export interface LocaleProviderProps {

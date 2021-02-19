@@ -14,7 +14,7 @@ import FormContext from '../form/FormContext';
 import Progress from '../progress';
 import Ripple from '../ripple';
 import { WaitType, Size } from '../core/enum';
-import { ButtonColor, ButtonShape, ButtonType, ButtonWaitType, FuncType } from './enum';
+import { ButtonColor, ButtonType, FuncType } from './enum';
 import DataSetComponent, { DataSetComponentProps } from '../data-set/DataSetComponent';
 import autobind from '../_util/autobind';
 

@@ -13,7 +13,7 @@ import defaultTo from 'lodash/defaultTo';
 import { ColProps } from 'choerodon-ui/lib/col';
 import Row, { RowProps } from 'choerodon-ui/lib/row';
 import classNames from 'classnames';
-import * as ObjectChainValue from '../_util/ObjectChainValue';
+import ObjectChainValue from '../_util/ObjectChainValue';
 import DataSetComponent, { DataSetComponentProps } from '../data-set/DataSetComponent';
 import ScreeningOption, { ScreeningOptionProps } from './ScreeningOption';
 import DataSet from '../data-set/DataSet';

@@ -11,7 +11,7 @@ import Modal, { ModalProps } from '../modal';
 import message from '../message';
 import Upload, { UploadProps } from '../upload';
 import Crop from './Crop';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 import LocaleReceiver from '../locale-provider/LocaleReceiver';
 import defaultLocale from '../locale-provider/default';
 import { imageCrop } from '../locale-provider'

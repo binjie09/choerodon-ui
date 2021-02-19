@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import isObject from 'lodash/isObject';
-import { getPrefixCls, getConfig } from '../configure';
+import { getPrefixCls, getConfig } from '../configure/utils';
 import Icon from '../icon';
 import NotFound from './noFound';
 import ServerError from './serverError';

@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useRef, forwardRef, Ref, ReactElement } from 'react';
 import Cropper from 'react-easy-crop';
 import isFunction from 'lodash/isFunction';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 import LocaleReceiver from '../locale-provider/LocaleReceiver';
 import Modal, { ModalProps } from '../modal';
 import Slider from '../slider';

@@ -218,6 +218,7 @@ export class NumberField<T extends NumberFieldProps> extends TextField<T & Numbe
       min,
       max,
       step,
+      // @ts-ignore
       nonStrictStep,
     };
   }

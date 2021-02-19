@@ -3,7 +3,7 @@
  */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { getPrefixCls } from '../configure';
+import { getPrefixCls } from '../configure/utils';
 
 let relativeX = 0;
 let relativeY = 0;

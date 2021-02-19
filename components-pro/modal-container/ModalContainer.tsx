@@ -13,7 +13,7 @@ import { warning, EventManager, stopEvent } from '@buildrun/dataset';
 import measureScrollbar from 'choerodon-ui/lib/_util/measureScrollbar';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
 import { getProPrefixCls } from 'choerodon-ui/lib/configure/utils';
-import Modal, { ModalProps, MousePosition, destroyFns } from '../modal/Modal';
+import Modal, { ModalProps } from '../modal/Modal';
 import Animate from '../animate';
 
 function getArrayIndex(array, index) {

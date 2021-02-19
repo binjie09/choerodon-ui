@@ -9,6 +9,7 @@ import defaults from './default';
 
 export { Formatter, Status } from '@buildrun/dataset/lib/configure';
 
+//@ts-ignore
 configureDataSet<Config>({
   feedback: defaultFeedback,
   confirm: async (message) => (await confirm(message)) !== 'cancel',
@@ -18,5 +19,6 @@ configureDataSet<Config>({
 });
 
 export default function configure(config: Config) {
+  // @ts-ignore
   configureDataSet<Config>(config);
 }

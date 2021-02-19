@@ -4,7 +4,7 @@ import { observer } from 'mobx-react';
 import classNames from 'classnames';
 import { Draggable, DraggableProvided, DraggableRubric, DraggableStateSnapshot, Droppable, DroppableProvided } from 'react-beautiful-dnd';
 import isFunction from 'lodash/isFunction';
-import { action, computed, get, set } from 'mobx';
+import { computed } from 'mobx';
 import DataSet from '@buildrun/dataset';
 import { ColumnProps } from './Column';
 import { ElementProps } from '../core/ViewComponent';
