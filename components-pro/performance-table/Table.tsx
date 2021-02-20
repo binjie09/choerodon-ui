@@ -478,8 +478,7 @@ export default class PerformanceTable extends React.Component<TableProps, TableS
             // @ts-ignore
             <Cell dataKey={dataKey}>
               {
-                // @ts-ignore
-                (rowData, rowIndex) => column.render({ rowData, rowIndex, dataIndex: dataKey })
+                (rowData, rowIndex) => column.render!({ rowData, rowIndex, dataIndex: dataKey })
               }
             </Cell>
             // @ts-ignore

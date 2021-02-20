@@ -10,19 +10,23 @@ import TreeNode, { TreeNodeProps } from './TreeNode';
 import { NodeElement, Key, DataNode, DataEntity, NodeInstance, FlattenNode, Direction } from './interface';
 import { TreeProps, AllowDrop } from './Tree';
 
-export function arrDel(list: Key[], value: Key) {
+export function arrDel(list: Key[], value: Key | undefined | null) {
   const clone = list.slice();
-  const index = clone.indexOf(value);
-  if (index >= 0) {
-    clone.splice(index, 1);
+  if (value !== undefined && value !== null) {
+    const index = clone.indexOf(value);
+    if (index >= 0) {
+      clone.splice(index, 1);
+    }
   }
   return clone;
 }
 
-export function arrAdd(list: Key[], value: Key) {
+export function arrAdd(list: Key[], value: Key | undefined | null) {
   const clone = list.slice();
-  if (clone.indexOf(value) === -1) {
-    clone.push(value);
+  if (value !== undefined && value !== null) {
+    if (clone.indexOf(value) === -1) {
+      clone.push(value);
+    }
   }
   return clone;
 }
@@ -31,7 +35,7 @@ export function posToArr(pos: string) {
   return pos.split('-');
 }
 
-export function getPosition(level: string | number, index: number) {
+export function getPosition(level: string | number, index?: number) {
   return `${level}-${index}`;
 }
 
@@ -42,9 +46,10 @@ export function isTreeNode(node: NodeElement) {
 export function getDragChildrenKeys(dragNodeKey: Key, keyEntities: Record<Key, DataEntity>): Key[] {
   // not contains self
   // self for left or right drag
-  const dragChildrenKeys = [];
+  const dragChildrenKeys: Key[] = [];
 
   const entity = keyEntities[dragNodeKey];
+
   function dig(list: DataEntity[] = []) {
     list.forEach(({ key, children }) => {
       dragChildrenKeys.push(key);
@@ -57,15 +62,15 @@ export function getDragChildrenKeys(dragNodeKey: Key, keyEntities: Record<Key, D
   return dragChildrenKeys;
 }
 
-export function isLastChild (treeNodeEntity: DataEntity) {
+export function isLastChild(treeNodeEntity: DataEntity) {
   if (treeNodeEntity.parent) {
     const posArr = posToArr(treeNodeEntity.pos);
-    return Number(posArr[posArr.length - 1]) === treeNodeEntity.parent.children.length - 1;
+    return Number(posArr[posArr.length - 1]) === treeNodeEntity.parent.children!.length - 1;
   }
   return false;
 }
 
-export function isFirstChild (treeNodeEntity: DataEntity) {
+export function isFirstChild(treeNodeEntity: DataEntity) {
   const posArr = posToArr(treeNodeEntity.pos);
   return Number(posArr[posArr.length - 1]) === 0;
 }
@@ -89,7 +94,7 @@ export function calcDropPosition(
   dropLevelOffset: number,
   dropTargetKey: Key,
   dropTargetPos: string,
-  dropContainerKey: Key,
+  dropContainerKey: Key | null,
   dragOverNodeKey: Key,
   dropAllowed: boolean,
 } {
@@ -100,7 +105,7 @@ export function calcDropPosition(
   const rawDropLevelOffset = (horizontalMouseOffset - 12) / indent;
 
   // find abstract drop node by horizontal offset
-  let abstractDropNodeEntity: DataEntity = keyEntities[targetNode.props.eventKey];
+  let abstractDropNodeEntity: DataEntity = keyEntities[targetNode.props.eventKey!];
 
   if (clientY < top + height / 2) {
     // first half, set abstract drop node to previous node
@@ -109,7 +114,7 @@ export function calcDropPosition(
     );
     const prevNodeIndex = nodeIndex <= 0 ? 0 : nodeIndex - 1;
     const prevNodeKey = flattenedNodes[prevNodeIndex].data.key;
-    abstractDropNodeEntity = keyEntities[prevNodeKey];
+    abstractDropNodeEntity = keyEntities[prevNodeKey!];
   }
 
   const abstractDragOverEntity = abstractDropNodeEntity;
@@ -121,14 +126,14 @@ export function calcDropPosition(
     if (
       isLastChild(abstractDropNodeEntity)
     ) {
-      abstractDropNodeEntity = abstractDropNodeEntity.parent;
+      abstractDropNodeEntity = abstractDropNodeEntity.parent!;
       dropLevelOffset += 1;
     } else {
       break;
     }
   }
 
-  const abstractDropDataNode = abstractDropNodeEntity.node
+  const abstractDropDataNode = abstractDropNodeEntity.node;
   let dropAllowed = true;
   if (
     isFirstChild(abstractDropNodeEntity) &&
@@ -141,7 +146,7 @@ export function calcDropPosition(
     abstractDropNodeEntity.key === targetNode.props.eventKey
   ) {
     // first half of first node in first level
-    dropPosition = -1
+    dropPosition = -1;
   } else if (
     (abstractDragOverEntity.children || []).length &&
     expandKeys.includes(dragOverNodeKey)
@@ -154,7 +159,7 @@ export function calcDropPosition(
     })) {
       dropPosition = 0;
     } else {
-      dropAllowed = false
+      dropAllowed = false;
     }
   } else if (
     dropLevelOffset === 0
@@ -227,7 +232,7 @@ export function calcDropPosition(
  * @param props
  * @returns [string]
  */
-export function calcSelectedKeys(selectedKeys: Key[], props: TreeProps) {
+export function calcSelectedKeys(selectedKeys: Key[] | undefined, props: TreeProps) {
   if (!selectedKeys) return undefined;
 
   const { multiple } = props;
@@ -242,8 +247,9 @@ export function calcSelectedKeys(selectedKeys: Key[], props: TreeProps) {
 }
 
 const internalProcessProps = (props: DataNode): Partial<TreeNodeProps> => props;
+
 export function convertDataToTree(
-  treeData: DataNode[],
+  treeData?: DataNode[],
   processor?: { processProps: (prop: DataNode) => any },
 ): NodeElement[] {
   if (!treeData) return [];
@@ -262,7 +268,7 @@ export function convertDataToTree(
 /**
  * Parse `checkedKeys` to { checkedKeys, halfCheckedKeys } style
  */
-export function parseCheckedKeys(keys: Key[] | { checked: Key[]; halfChecked: Key[] }) {
+export function parseCheckedKeys(keys: Key[] | { checked: Key[]; halfChecked: Key[] } | undefined) {
   if (!keys) {
     return null;
   }
@@ -293,7 +299,7 @@ export function parseCheckedKeys(keys: Key[] | { checked: Key[]; halfChecked: Ke
  * @param keyList
  * @param keyEntities
  */
-export function conductExpandParent(keyList: Key[], keyEntities: Record<Key, DataEntity>): Key[] {
+export function conductExpandParent(keyList: Key[] | undefined, keyEntities: Record<Key, DataEntity>): Key[] {
   const expandedKeys = new Set<Key>();
 
   function conductUp(key: Key) {
