@@ -1,4 +1,4 @@
-import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
+import { FieldType } from '@choerodon/dataset/lib/data-set/enum';
 import {
   getNumberFormatOptions,
   toLocaleStringPolyfill,

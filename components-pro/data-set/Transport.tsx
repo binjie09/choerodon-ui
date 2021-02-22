@@ -1,4 +1,4 @@
-export { Transport as default } from '@buildrun/dataset'
+export { Transport as default } from '@choerodon/dataset'
 export {
   TransportProps, TransportHookProps, SubmitTypes, TransportAdapter, TransportHook, TransportType, TransportTypes,
-} from '@buildrun/dataset/lib/data-set/Transport';
+} from '@choerodon/dataset/lib/data-set/Transport';

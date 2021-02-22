@@ -2,7 +2,7 @@
 import React, { Component, MouseEventHandler } from 'react';
 import moment, { Moment } from 'moment';
 import classNames from 'classnames';
-import { warning } from '@buildrun/dataset';
+import { warning } from '@choerodon/dataset';
 import Button from '../button';
 import Icon from '../icon';
 import interopDefault from '../_util/interopDefault';

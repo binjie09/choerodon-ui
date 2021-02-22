@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import { action, computed, get, set } from 'mobx';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
-import DataSet from '@buildrun/dataset';
+import DataSet from '@choerodon/dataset';
 import { ColumnProps } from './Column';
 import { ElementProps } from '../core/ViewComponent';
 import TableContext from './TableContext';

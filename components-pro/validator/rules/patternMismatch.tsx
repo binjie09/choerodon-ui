@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/validator/rules/patternMismatch';
+export { default } from '@choerodon/dataset/lib/validator/rules/patternMismatch';

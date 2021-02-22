@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import PropTypes from 'prop-types';
-import { Record } from '@buildrun/dataset';
-import { Lang } from '@buildrun/dataset/lib/locale-context/enum';
+import { Record } from '@choerodon/dataset';
+import { Lang } from '@choerodon/dataset/lib/locale-context/enum';
 import { getConfig } from 'choerodon-ui/lib/configure/utils';
 import ObserverTextField from '../text-field/TextField';
 import Form from '../form/Form';

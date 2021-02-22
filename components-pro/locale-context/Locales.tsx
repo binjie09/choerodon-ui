@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/locale-context/Locales';
+export { default } from '@choerodon/dataset/lib/locale-context/Locales';

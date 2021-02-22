@@ -1,7 +1,7 @@
 import React, { isValidElement, Key, ReactElement, ReactNode } from 'react';
 import isString from 'lodash/isString';
-import DataSet, { Field, Record, warning } from '@buildrun/dataset';
-import { FieldType, RecordStatus } from '@buildrun/dataset/lib/data-set/enum';
+import DataSet, { Field, Record, warning } from '@choerodon/dataset';
+import { FieldType, RecordStatus } from '@choerodon/dataset/lib/data-set/enum';
 import { ColumnProps } from './Column';
 import ObserverCheckBox from '../check-box/CheckBox';
 import ObserverSelect from '../select/Select';

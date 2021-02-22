@@ -1,7 +1,7 @@
 import React, { cloneElement, Component, CSSProperties, ReactElement, ReactNode } from 'react';
 import { observer } from 'mobx-react';
 import isFunction from 'lodash/isFunction';
-import DataSet, { Field } from '@buildrun/dataset';
+import DataSet, { Field } from '@choerodon/dataset';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
 import { getProPrefixCls } from 'choerodon-ui/lib/configure/utils';
 import Button from '../../button';

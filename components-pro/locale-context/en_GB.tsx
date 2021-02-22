@@ -1,4 +1,4 @@
-import enGB from '@buildrun/dataset/lib/locale-context/en_GB';
+import enGB from '@choerodon/dataset/lib/locale-context/en_GB';
 import { Locale } from './locale';
 
 const locale: Locale = {

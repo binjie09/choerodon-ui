@@ -1,4 +1,4 @@
-import { getConfig as getDataSetConfig } from '@buildrun/dataset';
+import { getConfig as getDataSetConfig } from '@choerodon/dataset';
 import { Config, ConfigKeys } from './config';
 import defaults from './default';
 

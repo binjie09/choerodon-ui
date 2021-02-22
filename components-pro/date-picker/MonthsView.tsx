@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
 import { Moment } from 'moment';
 import classNames from 'classnames';
-import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
-import { stopEvent } from '@buildrun/dataset';
+import { FieldType } from '@choerodon/dataset/lib/data-set/enum';
+import { stopEvent } from '@choerodon/dataset';
 import Icon from '../icon';
 import DaysView, { alwaysValidDate } from './DaysView';
 import { ViewMode } from './enum';

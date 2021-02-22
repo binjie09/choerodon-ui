@@ -6,7 +6,7 @@ import debounce from 'lodash/debounce';
 import isString from 'lodash/isString';
 import { computed, runInAction } from 'mobx';
 import { observer } from 'mobx-react';
-import { DataSetStatus } from '@buildrun/dataset/lib/data-set/enum';
+import { DataSetStatus } from '@choerodon/dataset/lib/data-set/enum';
 import { ProgressType } from 'choerodon-ui/lib/progress/enum';
 import { getConfig } from 'choerodon-ui/lib/configure/utils';
 import Icon from '../icon';

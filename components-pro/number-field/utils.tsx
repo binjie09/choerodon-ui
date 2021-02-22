@@ -1,4 +1,4 @@
-import { NumberUtils } from '@buildrun/dataset';
+import { NumberUtils } from '@choerodon/dataset';
 
 const { getNearStepValues, getPrecision, MAX_SAFE_INTEGER, plus } = NumberUtils;
 

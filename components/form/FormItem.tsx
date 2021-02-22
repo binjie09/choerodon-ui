@@ -2,7 +2,7 @@ import React, { Children, Component, CSSProperties, ReactElement, ReactNode } fr
 import { findDOMNode } from 'react-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { warning } from '@buildrun/dataset';
+import { warning } from '@choerodon/dataset';
 import { ColProps } from '../grid/col';
 import { FIELD_DATA_PROP, FIELD_META_PROP } from './constants';
 import PureRenderMixin from '../rc-components/util/PureRenderMixin';

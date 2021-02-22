@@ -2,7 +2,16 @@ import message from '../message';
 import exception from '../_util/exception';
 import { $l } from '../locale-context';
 
-export { FeedBack } from '@buildrun/dataset';
+export interface FeedBack {
+  loadSuccess?(result: any);
+
+  loadFailed?(error: Error);
+
+  submitSuccess?(result: any);
+
+  submitFailed?(error: Error);
+}
+
 
 const defaultFeedback = {
   loadSuccess(_result: any) {},

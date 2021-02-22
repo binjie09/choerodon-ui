@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { observer } from 'mobx-react';
 import { action, observable } from 'mobx';
-import { isSame, stopEvent } from '@buildrun/dataset';
+import { isSame, stopEvent } from '@choerodon/dataset';
 import { ProgressType } from 'choerodon-ui/lib/progress/enum';
 import KeyCode from 'choerodon-ui/lib/_util/KeyCode';
 import { getConfig } from 'choerodon-ui/lib/configure/utils';

@@ -5,7 +5,7 @@ import isEqual from 'lodash/isEqual';
 import merge from 'lodash/merge';
 import { create, Provider } from 'mini-store';
 import classes from 'component-classes';
-import { warning } from '@buildrun/dataset';
+import { warning } from '@choerodon/dataset';
 import addEventListener from '../../_util/addEventListener';
 import ColumnManager from './ColumnManager';
 import HeadTable from './HeadTable';

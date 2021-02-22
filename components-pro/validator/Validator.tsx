@@ -1,2 +1,2 @@
-export { Validator as default } from '@buildrun/dataset';
-export { ValidationMessages, CustomValidator } from '@buildrun/dataset/lib/validator/Validator';
+export { Validator as default } from '@choerodon/dataset';
+export { ValidationMessages, CustomValidator } from '@choerodon/dataset/lib/validator/Validator';

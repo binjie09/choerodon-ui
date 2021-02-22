@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import { computed, isArrayLike } from 'mobx';
 import omit from 'lodash/omit';
-import { ValidationMessages } from '@buildrun/dataset/lib/validator/Validator';
+import { ValidationMessages } from '@choerodon/dataset/lib/validator/Validator';
 import { Select, SelectProps } from '../select/Select';
 import ObserverRadio from '../radio/Radio';
 import ObserverCheckBox from '../check-box/CheckBox';

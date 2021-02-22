@@ -1,6 +1,6 @@
-import { Field, NumberUtils } from '@buildrun/dataset';
-import { Lang } from '@buildrun/dataset/lib/locale-context/enum';
-import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
+import { Field, NumberUtils } from '@choerodon/dataset';
+import { Lang } from '@choerodon/dataset/lib/locale-context/enum';
+import { FieldType } from '@choerodon/dataset/lib/data-set/enum';
 import formatNumber from '../formatter/formatNumber';
 import formatCurrency from '../formatter/formatCurrency';
 

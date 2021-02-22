@@ -1,1 +1,1 @@
-export { stores as default } from '@buildrun/dataset';
+export { stores as default } from '@choerodon/dataset';

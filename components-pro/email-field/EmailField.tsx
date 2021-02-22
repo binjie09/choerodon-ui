@@ -1,7 +1,7 @@
 import { observer } from 'mobx-react';
 import { computed } from 'mobx';
-import { ValidationMessages } from '@buildrun/dataset/lib/validator/Validator';
-import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
+import { ValidationMessages } from '@choerodon/dataset/lib/validator/Validator';
+import { FieldType } from '@choerodon/dataset/lib/data-set/enum';
 import { TextField, TextFieldProps } from '../text-field/TextField';
 import { $l } from '../locale-context';
 

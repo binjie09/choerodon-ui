@@ -1,1 +1,1 @@
-export { default, ValidatorProps, methodReturn, validationRule } from '@buildrun/dataset/lib/validator/rules';
+export { default, ValidatorProps, methodReturn, validationRule } from '@choerodon/dataset/lib/validator/rules';

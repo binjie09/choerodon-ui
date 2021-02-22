@@ -2,8 +2,8 @@ import React from 'react';
 import { observer } from 'mobx-react';
 import omit from 'lodash/omit';
 import isNumber from 'lodash/isNumber';
-import DataSet from '@buildrun/dataset';
-import { FieldFormat } from '@buildrun/dataset/lib/data-set/enum';
+import DataSet from '@choerodon/dataset';
+import { FieldFormat } from '@choerodon/dataset/lib/data-set/enum';
 import C7NProgress, { ProgressProps as C7NProgressProps } from 'choerodon-ui/lib/progress';
 import { FormField } from '../field/FormField';
 

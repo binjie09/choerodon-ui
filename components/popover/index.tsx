@@ -1,5 +1,5 @@
 import React, { Component, ReactNode } from 'react';
-import { warning } from '@buildrun/dataset';
+import { warning } from '@choerodon/dataset';
 import Tooltip, { AbstractTooltipProps } from '../tooltip';
 import { getPrefixCls } from '../configure/utils';
 

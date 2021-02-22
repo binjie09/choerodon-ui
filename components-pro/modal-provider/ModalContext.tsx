@@ -1,3 +1,3 @@
-import { ModalContext } from '@buildrun/ui-shared';
+import { ModalContext } from '@choerodon/ui-shared';
 
 export default ModalContext;

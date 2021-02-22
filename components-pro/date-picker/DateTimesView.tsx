@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import moment, { Moment } from 'moment';
 import noop from 'lodash/noop';
-import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
+import { FieldType } from '@choerodon/dataset/lib/data-set/enum';
 import { DatePickerKeyboardEvent } from './DatePicker';
 import DaysView from './DaysView';
 import TimesView from './TimesView';

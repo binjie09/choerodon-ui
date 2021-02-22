@@ -1,4 +1,4 @@
-export { TimeUnit } from '@buildrun/dataset/lib/enum';
+export { TimeUnit } from '@choerodon/dataset/lib/enum';
 
 export const enum ViewMode {
   time = 'time',

@@ -1,1 +1,1 @@
-export { default } from '@buildrun/dataset/lib/validator/rules/rangeOverflow';
+export { default } from '@choerodon/dataset/lib/validator/rules/rangeOverflow';

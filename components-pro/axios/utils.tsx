@@ -1,1 +1,1 @@
-export { buildURLWithAxiosConfig, buildSortedURL, isCacheLike } from '@buildrun/dataset';
+export { buildURLWithAxiosConfig, buildSortedURL, isCacheLike } from '@choerodon/dataset';

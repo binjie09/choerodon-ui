@@ -1,1 +1,1 @@
-export { lovStore as default, LovCodeStore } from '@buildrun/dataset';
+export { lovStore as default, LovCodeStore } from '@choerodon/dataset';

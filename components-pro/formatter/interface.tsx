@@ -1,3 +1,3 @@
 export {
     FormatOptions,
-} from '@buildrun/dataset/lib/format-string';
+} from '@choerodon/dataset/lib/format-string';

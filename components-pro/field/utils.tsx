@@ -2,8 +2,8 @@ import isObject from 'lodash/isObject';
 import isNil from 'lodash/isNil';
 import { isArrayLike } from 'mobx';
 import moment from 'moment';
-import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
-import { Field } from '@buildrun/dataset';
+import { FieldType } from '@choerodon/dataset/lib/data-set/enum';
+import { Field } from '@choerodon/dataset';
 import { getConfig } from 'choerodon-ui/lib/configure/utils';
 
 export function toRangeValue(value: any, range?: boolean | [string, string]): [any, any] {

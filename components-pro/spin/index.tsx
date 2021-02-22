@@ -1,7 +1,7 @@
 import React from 'react';
 import { observer } from 'mobx-react';
 import C7NSpin, { SpinProps as C7NSpinProps } from 'choerodon-ui/lib/spin';
-import { DataSetStatus } from '@buildrun/dataset/lib/data-set/enum';
+import { DataSetStatus } from '@choerodon/dataset/lib/data-set/enum';
 import DataSetComponent, { DataSetComponentProps } from '../data-set/DataSetComponent';
 
 export interface SpinProps extends C7NSpinProps, DataSetComponentProps {

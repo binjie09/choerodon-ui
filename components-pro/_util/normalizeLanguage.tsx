@@ -1,1 +1,1 @@
-export { normalizeLanguage as default } from '@buildrun/dataset';
+export { normalizeLanguage as default } from '@choerodon/dataset';

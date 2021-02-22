@@ -1,7 +1,7 @@
 import React, { Children, Component, CSSProperties, MouseEventHandler, ReactNode } from 'react';
 import classNames from 'classnames';
 import omit from 'lodash/omit';
-import { warning } from '@buildrun/dataset';
+import { warning } from '@choerodon/dataset';
 import { Size } from '../_util/enum';
 import Grid from './Grid';
 import Meta from './Meta';

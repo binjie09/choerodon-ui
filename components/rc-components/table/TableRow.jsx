@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'mini-store';
-import { warning } from '@buildrun/dataset';
+import { warning } from '@choerodon/dataset';
 import TableCell from './TableCell';
 
 class TableRow extends Component {

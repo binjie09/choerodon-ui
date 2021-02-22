@@ -1,6 +1,6 @@
 import { FunctionComponent, ReactNode } from 'react';
 import isFunction from 'lodash/isFunction';
-import { Record } from '@buildrun/dataset';
+import { Record } from '@choerodon/dataset';
 import { ColumnProps } from './Column';
 import { ColumnLock } from './enum';
 

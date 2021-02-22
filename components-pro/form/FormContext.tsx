@@ -1,3 +1,3 @@
-import { FormContext } from '@buildrun/ui-shared';
+import { FormContext } from '@choerodon/ui-shared';
 
 export default FormContext;

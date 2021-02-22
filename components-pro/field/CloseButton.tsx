@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { stopEvent, stopPropagation } from '@buildrun/dataset';
+import { stopEvent, stopPropagation } from '@choerodon/dataset';
 import Icon from '../icon';
 
 export interface CloseButtonProps {

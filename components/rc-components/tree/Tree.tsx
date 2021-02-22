@@ -11,7 +11,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import KeyCode from 'rc-util/lib/KeyCode';
-import { warning } from '@buildrun/dataset';
+import { warning } from '@choerodon/dataset';
 import classNames from 'classnames';
 import KeyCode from '../../_util/KeyCode';
 import warning from '../../_util/warning';

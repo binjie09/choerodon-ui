@@ -11,9 +11,9 @@ import Row from 'choerodon-ui/lib/row';
 import Col from 'choerodon-ui/lib/col';
 import Icon from 'choerodon-ui/lib/icon';
 import { DropDownProps } from 'choerodon-ui/lib/dropdown';
-import DataSet from '@buildrun/dataset';
-import { findBindFieldBy } from '@buildrun/dataset/lib/data-set/utils';
-import { DataSetStatus, FieldType, ExportMode } from '@buildrun/dataset/lib/data-set/enum';
+import DataSet from '@choerodon/dataset';
+import { findBindFieldBy } from '@choerodon/dataset/lib/data-set/utils';
+import { DataSetStatus, FieldType, ExportMode } from '@choerodon/dataset/lib/data-set/enum';
 import { TableButtonType, TableQueryBarType } from '../enum';
 import TableButtons from './TableButtons';
 import Table, {

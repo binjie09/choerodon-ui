@@ -6,7 +6,7 @@ import raf from 'raf';
 import { action as mobxAction, observable, runInAction } from 'mobx';
 import { observer, PropTypes as MobxPropTypes } from 'mobx-react';
 import noop from 'lodash/noop';
-import { EventManager } from '@buildrun/dataset';
+import { EventManager } from '@choerodon/dataset';
 import Popup from './Popup';
 import autobind from '../_util/autobind';
 import TaskRunner from '../_util/TaskRunner';

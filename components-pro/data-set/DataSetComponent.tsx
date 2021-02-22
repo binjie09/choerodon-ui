@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import omit from 'lodash/omit';
 import { computed } from 'mobx';
-import DataSet from '@buildrun/dataset';
-import { Lang } from '@buildrun/dataset/lib/locale-context/enum';
+import DataSet from '@choerodon/dataset';
+import { Lang } from '@choerodon/dataset/lib/locale-context/enum';
 import ViewComponent, { ViewComponentProps } from '../core/ViewComponent';
 
 /**

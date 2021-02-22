@@ -5,7 +5,7 @@ import isPlainObject from 'lodash/isPlainObject';
 import isNil from 'lodash/isNil';
 import omit from 'lodash/omit';
 import { getConfig } from 'choerodon-ui/lib/configure/utils';
-import { BooleanValue, FieldType } from '@buildrun/dataset/lib/data-set/enum';
+import { BooleanValue, FieldType } from '@choerodon/dataset/lib/data-set/enum';
 import processFieldValue from '../_util/processFieldValue';
 import { FormField, FormFieldProps, RenderProps } from '../field/FormField';
 import autobind from '../_util/autobind';

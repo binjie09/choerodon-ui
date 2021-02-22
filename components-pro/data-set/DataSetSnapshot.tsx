@@ -1,1 +1,1 @@
-export { DataSetSnapshot as default } from '@buildrun/dataset';
+export { DataSetSnapshot as default } from '@choerodon/dataset';

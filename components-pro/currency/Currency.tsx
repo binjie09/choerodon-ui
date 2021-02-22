@@ -1,5 +1,5 @@
 import { observer } from 'mobx-react';
-import { FieldType } from '@buildrun/dataset/lib/data-set/enum';
+import { FieldType } from '@choerodon/dataset/lib/data-set/enum';
 import { NumberField, NumberFieldProps, FormatNumberFuncOptions } from '../number-field/NumberField';
 // import { NumberField } from '../number-field/NumberField';
 import formatCurrency from '../formatter/formatCurrency';

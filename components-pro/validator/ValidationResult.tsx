@@ -1,1 +1,1 @@
-export { ValidationResult as default } from '@buildrun/dataset';
+export { ValidationResult as default } from '@choerodon/dataset';

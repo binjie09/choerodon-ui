@@ -2,7 +2,7 @@ import React, { Component, ComponentClass, MouseEvent } from 'react';
 import moment, { Moment } from 'moment';
 import classNames from 'classnames';
 import omit from 'lodash/omit';
-import { warning } from '@buildrun/dataset';
+import { warning } from '@choerodon/dataset';
 import Button from '../button';
 import Icon from '../icon';
 import Input from '../input';

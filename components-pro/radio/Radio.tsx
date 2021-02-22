@@ -4,7 +4,7 @@ import { action, computed } from 'mobx';
 import { observer } from 'mobx-react';
 import omit from 'lodash/omit';
 import noop from 'lodash/noop';
-import { ValidationMessages } from '@buildrun/dataset/lib/validator/Validator';
+import { ValidationMessages } from '@choerodon/dataset/lib/validator/Validator';
 import { FormField, FormFieldProps } from '../field/FormField';
 import autobind from '../_util/autobind';
 import { ViewMode } from './enum';

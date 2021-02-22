@@ -1,7 +1,7 @@
 import React, { Children, cloneElement, Component, CSSProperties, ReactNode } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { warning } from '@buildrun/dataset';
+import { warning } from '@choerodon/dataset';
 import BreadcrumbItem, { BreadcrumbItemProps } from './BreadcrumbItem';
 import { getPrefixCls } from '../configure/utils';
 

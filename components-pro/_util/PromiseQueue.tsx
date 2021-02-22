@@ -1,1 +1,1 @@
-export { PromiseQueue as default } from '@buildrun/dataset';
+export { PromiseQueue as default } from '@choerodon/dataset';

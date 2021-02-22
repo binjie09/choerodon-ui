@@ -9,7 +9,7 @@ import defaultTo from 'lodash/defaultTo';
 import isString from 'lodash/isString';
 import classes from 'component-classes';
 import { DraggableProvided, DraggableStateSnapshot } from 'react-beautiful-dnd';
-import DataSet, { EventManager } from '@buildrun/dataset';
+import DataSet, { EventManager } from '@choerodon/dataset';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
 import { isFunction, isNil } from 'lodash';
 import { ColumnProps, minColumnWidth } from './Column';

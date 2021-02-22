@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { warning } from '@buildrun/dataset';
+import { warning } from '@choerodon/dataset';
 
 const calcPoints = (vertical, marks, dots, step, min, max) => {
   warning(

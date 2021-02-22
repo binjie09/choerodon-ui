@@ -4,7 +4,7 @@ import { observer } from 'mobx-react';
 import omit from 'lodash/omit';
 import classNames from 'classnames';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
-import DataSet from '@buildrun/dataset';
+import DataSet from '@choerodon/dataset';
 import { ColumnProps } from './Column';
 import TableContext from './TableContext';
 import { ElementProps } from '../core/ViewComponent';

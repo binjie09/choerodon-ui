@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import noop from 'lodash/noop';
 import scrollIntoView from 'scroll-into-view-if-needed';
 import smoothScrollIntoView from 'smooth-scroll-into-view-if-needed';
-import { warning } from '@buildrun/dataset';
+import { warning } from '@choerodon/dataset';
 import Pagination from '../pagination';
 import Icon from '../icon';
 import Spin, { SpinProps } from '../spin';

@@ -1,7 +1,7 @@
 import React, { cloneElement, Component, ReactElement, ReactNode } from 'react';
 import { observer } from 'mobx-react';
-import DataSet, { Field, Record } from '@buildrun/dataset';
-import { Fields } from '@buildrun/dataset/lib/data-set/Field';
+import DataSet, { Field, Record } from '@choerodon/dataset';
+import { Fields } from '@choerodon/dataset/lib/data-set/Field';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
 import { getProPrefixCls } from 'choerodon-ui/lib/configure/utils';
 import { ElementProps } from '../../core/ViewComponent';

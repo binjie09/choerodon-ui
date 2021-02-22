@@ -4,7 +4,7 @@ import React from 'react';
 import omit from 'lodash/omit';
 import DataSetComponent, { DataSetComponentProps } from '../data-set/DataSetComponent';
 import SkeletonButton from './Button';
-import { DataSetStatus } from '@buildrun/dataset/lib/data-set/enum';
+import { DataSetStatus } from '@choerodon/dataset/lib/data-set/enum';
 import SkeletonInput from './Input';
 import Avatar from './Avatar';
 

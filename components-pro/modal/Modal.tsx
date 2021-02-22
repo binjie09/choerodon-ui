@@ -7,7 +7,7 @@ import isNil from 'lodash/isNil';
 import isNumber from 'lodash/isNumber';
 import classNames from 'classnames';
 import classes from 'component-classes';
-import { EventManager, isEmpty, DataSetRequestError } from '@buildrun/dataset';
+import { EventManager, isEmpty, DataSetRequestError } from '@choerodon/dataset';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
 import KeyCode from 'choerodon-ui/lib/_util/KeyCode';
 import { getConfig } from 'choerodon-ui/lib/configure/utils';

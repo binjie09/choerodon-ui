@@ -10,7 +10,7 @@ import React, {
 } from 'react';
 import { findDOMNode } from 'react-dom';
 import classNames from 'classnames';
-import { warning } from '@buildrun/dataset';
+import { warning } from '@choerodon/dataset';
 import Icon from '../icon';
 import isFlexSupported from '../_util/isFlexSupported';
 import RcTabs, { TabContent, TabPane } from '../rc-components/tabs';

@@ -1,4 +1,4 @@
-export { ColumnAlign } from '@buildrun/dataset/lib/enum';
+export { ColumnAlign } from '@choerodon/dataset/lib/enum';
 
 export const enum ColumnLock {
   left = 'left',

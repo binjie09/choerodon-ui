@@ -10,7 +10,7 @@ import React, {
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import omit from 'lodash/omit';
-import { warning } from '@buildrun/dataset';
+import { warning } from '@choerodon/dataset';
 import FormItem from './FormItem';
 import { FIELD_DATA_PROP, FIELD_META_PROP } from './constants';
 import { createFormField } from '../rc-components/form';

@@ -1,4 +1,4 @@
-import { EventManager } from '@buildrun/dataset';
+import { EventManager } from '@choerodon/dataset';
 import createDefaultSetter from './createDefaultSetter';
 import TaskRunner from './TaskRunner';
 

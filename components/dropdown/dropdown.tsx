@@ -1,6 +1,6 @@
 import React, { Children, cloneElement, Component, ReactElement, ReactNode } from 'react';
 import classNames from 'classnames';
-import { warning } from '@buildrun/dataset';
+import { warning } from '@choerodon/dataset';
 import DropdownButton from './dropdown-button';
 import RcDropdown from '../rc-components/dropdown';
 import { Placements } from './enum';

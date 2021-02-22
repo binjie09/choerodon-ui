@@ -1,6 +1,6 @@
 import React, { Component, ReactElement, ReactNode } from 'react';
 import { observer } from 'mobx-react';
-import DataSet from '@buildrun/dataset';
+import DataSet from '@choerodon/dataset';
 import { getProPrefixCls } from 'choerodon-ui/lib/configure/utils';
 import FilterSelect from './FilterSelect';
 import ColumnFilter from './ColumnFilter';

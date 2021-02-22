@@ -4,7 +4,7 @@ import { action, computed, isArrayLike, observable, runInAction } from 'mobx';
 import { observer } from 'mobx-react';
 import omit from 'lodash/omit';
 import flatten from 'lodash/flatten';
-import { stopEvent } from '@buildrun/dataset';
+import { stopEvent } from '@choerodon/dataset';
 import KeyCode from 'choerodon-ui/lib/_util/KeyCode';
 import { getConfig } from 'choerodon-ui/lib/configure/utils';
 import TriggerField, { TriggerFieldProps } from '../trigger-field/TriggerField';

@@ -1,6 +1,6 @@
 import React, { Children, cloneElement } from 'react';
 import classnames from 'classnames';
-import { warning } from '@buildrun/dataset';
+import { warning } from '@choerodon/dataset';
 import { generateKey, getDataAttr } from './utils';
 import Ripple from '../../ripple';
 

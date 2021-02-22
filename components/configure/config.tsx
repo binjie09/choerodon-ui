@@ -4,7 +4,7 @@ import { ReactNode } from 'react';
 import isObject from 'lodash/isObject';
 import { categories } from 'choerodon-ui-font';
 import { LovConfig } from 'choerodon-ui/pro/lib/lov/Lov';
-import { RecordStatus, ExportMode } from '@buildrun/dataset/lib/data-set/enum';
+import { RecordStatus, ExportMode } from '@choerodon/dataset/lib/data-set/enum';
 import { $l } from 'choerodon-ui/pro/lib/locale-context';
 import {
   expandIconProps,
@@ -22,7 +22,7 @@ import { TableQueryBarType, DragColumnAlign } from 'choerodon-ui/pro/lib/table/e
 import { TriggerMode } from 'choerodon-ui/pro/lib/lov/enum';
 import { TransportHookProps, TransportProps } from 'choerodon-ui/pro/lib/data-set/Transport';
 import DataSet from 'choerodon-ui/pro/lib/data-set/DataSet';
-import defaultFeedback from 'choerodon-ui/pro/lib/data-set/FeedBack';
+import defaultFeedback, { FeedBack } from 'choerodon-ui/pro/lib/data-set/FeedBack';
 import Record from 'choerodon-ui/pro/lib/data-set/Record';
 import { CacheOptions } from 'choerodon-ui/pro/lib/_util/Cache';
 import { LabelLayout } from 'choerodon-ui/pro/lib/form/enum';
@@ -85,7 +85,6 @@ export type Config = {
   lovTriggerMode?: TriggerMode;
   lovModalProps?: ModalProps;
   axios?: AxiosInstance;
-  // @ts-ignore
   feedback?: FeedBack;
   dataKey?: string;
   totalKey?: string;

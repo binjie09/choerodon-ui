@@ -4,7 +4,7 @@ import { observer } from 'mobx-react';
 import { action, computed, get, remove, set } from 'mobx';
 import classNames from 'classnames';
 import { DraggableProvided, DraggableStateSnapshot } from 'react-beautiful-dnd';
-import { Record } from '@buildrun/dataset';
+import { Record } from '@choerodon/dataset';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
 import measureScrollbar from 'choerodon-ui/lib/_util/measureScrollbar';
 import omit from 'lodash/omit';

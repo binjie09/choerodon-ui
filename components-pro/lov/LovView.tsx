@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { action } from 'mobx';
-import DataSet from '@buildrun/dataset';
+import DataSet from '@choerodon/dataset';
 import KeyCode from 'choerodon-ui/lib/_util/KeyCode';
 import { getConfig } from 'choerodon-ui/lib/configure/utils';
 import { pick } from 'lodash';
 import TableProfessionalBar from '../table/query-bar/TableProfessionalBar';
 import { SelectionMode, TableMode, TableQueryBarType } from '../table/enum';
-import { DataSetSelection } from '@buildrun/dataset/lib/data-set/enum';
+import { DataSetSelection } from '@choerodon/dataset/lib/data-set/enum';
 import Table, { TableProps, TableQueryBarHook } from '../table/Table';
 import { LovConfig } from './Lov';
 import { ColumnProps } from '../table/Column';

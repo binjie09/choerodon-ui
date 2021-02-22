@@ -1,4 +1,4 @@
-import jaJP from '@buildrun/dataset/lib/locale-context/ja_JP';
+import jaJP from '@choerodon/dataset/lib/locale-context/ja_JP';
 import { Locale } from './locale';
 
 const locale: Locale = {

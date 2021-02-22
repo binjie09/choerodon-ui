@@ -1,1 +1,1 @@
-export { cacheAdapterEnhancer as default } from '@buildrun/dataset';
+export { cacheAdapterEnhancer as default } from '@choerodon/dataset';

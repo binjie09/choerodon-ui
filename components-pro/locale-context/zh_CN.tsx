@@ -1,4 +1,4 @@
-import zhCN from '@buildrun/dataset/lib/locale-context/zh_CN';
+import zhCN from '@choerodon/dataset/lib/locale-context/zh_CN';
 import { Locale } from './locale';
 
 const locale: Locale = {

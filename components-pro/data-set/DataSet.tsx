@@ -1,2 +1,2 @@
-export { default } from '@buildrun/dataset';
-export { DataSetChildren, DataSetProps, Events } from '@buildrun/dataset/lib/data-set/DataSet';
+export { default } from '@choerodon/dataset';
+export { DataSetChildren, DataSetProps, Events } from '@choerodon/dataset/lib/data-set/DataSet';

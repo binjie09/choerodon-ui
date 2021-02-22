@@ -1,1 +1,1 @@
-export { PromiseMerger as default } from '@buildrun/dataset';
+export { PromiseMerger as default } from '@choerodon/dataset';

@@ -1,1 +1,1 @@
-export { processAxiosConfig, getLovPara } from '@buildrun/dataset';
+export { processAxiosConfig, getLovPara } from '@choerodon/dataset';

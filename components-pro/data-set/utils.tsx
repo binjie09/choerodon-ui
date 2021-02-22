@@ -4,4 +4,4 @@ export {
   findBindFieldBy, generateRecordJSONData, generateResponseData, getDateFormatByField, getDateFormatByFieldType, getFieldSorter,
   getLimit, getOrderFields, getRecordValue, isDirtyRecord, prepareForSubmit, prepareSubmitData, processIntlField, processToJSON,
   sortTree, useAll, useDirty,
-} from '@buildrun/dataset/lib/data-set/utils';
+} from '@choerodon/dataset/lib/data-set/utils';

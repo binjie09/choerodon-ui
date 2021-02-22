@@ -21,7 +21,7 @@ import {
   ResponderProvided,
 } from 'react-beautiful-dnd';
 import { getConfig, getProPrefixCls } from 'choerodon-ui/lib/configure/utils';
-import DataSet, { Record, warning } from '@buildrun/dataset';
+import DataSet, { Record, warning } from '@choerodon/dataset';
 import { pxToRem, toPx } from 'choerodon-ui/lib/_util/UnitConvertor';
 import measureScrollbar from 'choerodon-ui/lib/_util/measureScrollbar';
 import KeyCode from 'choerodon-ui/lib/_util/KeyCode';

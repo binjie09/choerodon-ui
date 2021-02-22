@@ -4,7 +4,7 @@ import React, { Children, cloneElement, Component } from 'react';
 import { unmountComponentAtNode } from 'react-dom';
 import classnames from 'classnames';
 import classes from 'component-classes';
-import { warning } from '@buildrun/dataset';
+import { warning } from '@choerodon/dataset';
 import noop from 'lodash/noop';
 import KeyCode from '../../_util/KeyCode';
 import childrenToArray from '../util/Children/toArray';

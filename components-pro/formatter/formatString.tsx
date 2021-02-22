@@ -1,1 +1,1 @@
-export { formatString as default } from '@buildrun/dataset';
+export { formatString as default } from '@choerodon/dataset';

@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
-import { Lang } from '@buildrun/dataset/lib/locale-context/enum';
-import { Locale as DataSetLocale } from '@buildrun/dataset/lib/locale-context/locale';
+import { Lang } from '@choerodon/dataset/lib/locale-context/enum';
+import { Locale as DataSetLocale } from '@choerodon/dataset/lib/locale-context/locale';
 import zh_CN from './zh_CN';
 
 export interface Locale extends DataSetLocale {

@@ -9,7 +9,7 @@ import Mask from './Mask';
 import { suffixCls } from '../modal/utils';
 
 const { containerInstances } = ModalManager;
-import { warning, EventManager, stopEvent } from '@buildrun/dataset';
+import { warning, EventManager, stopEvent } from '@choerodon/dataset';
 import measureScrollbar from 'choerodon-ui/lib/_util/measureScrollbar';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
 import { getProPrefixCls } from 'choerodon-ui/lib/configure/utils';

@@ -2,7 +2,7 @@ import React, { Component, CSSProperties } from 'react';
 import { findDOMNode } from 'react-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { warning } from '@buildrun/dataset';
+import { warning } from '@choerodon/dataset';
 import animation from '../_util/openAnimation';
 import SubMenu from './SubMenu';
 import Item from './MenuItem';

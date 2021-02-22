@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import { Draggable, DraggableProvided, DraggableRubric, DraggableStateSnapshot, Droppable, DroppableProvided } from 'react-beautiful-dnd';
 import isFunction from 'lodash/isFunction';
 import { computed } from 'mobx';
-import DataSet from '@buildrun/dataset';
+import DataSet from '@choerodon/dataset';
 import { ColumnProps } from './Column';
 import { ElementProps } from '../core/ViewComponent';
 import TableHeaderCell, { TableHeaderCellProps } from './TableHeaderCell';

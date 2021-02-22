@@ -3,7 +3,7 @@ import { computed } from 'mobx';
 import { observer } from 'mobx-react';
 import classNames from 'classnames';
 import omit from 'lodash/omit';
-import { Record, stopPropagation } from '@buildrun/dataset';
+import { Record, stopPropagation } from '@choerodon/dataset';
 import ObserverCheckBox from '../check-box/CheckBox';
 import { $l } from '../locale-context';
 import ObserverTextField from '../text-field/TextField';

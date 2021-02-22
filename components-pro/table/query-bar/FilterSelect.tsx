@@ -19,8 +19,8 @@ import {
   runInAction,
   toJS,
 } from 'mobx';
-import DataSet, { Field, Record, isSameLike } from '@buildrun/dataset';
-import { DataSetEvents } from '@buildrun/dataset/lib/data-set/enum';
+import DataSet, { Field, Record, isSameLike } from '@choerodon/dataset';
+import { DataSetEvents } from '@choerodon/dataset/lib/data-set/enum';
 import { pxToRem } from 'choerodon-ui/lib/_util/UnitConvertor';
 import KeyCode from 'choerodon-ui/lib/_util/KeyCode';
 import Icon from '../../icon';

@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import { warning } from '@buildrun/dataset';
+import { warning } from '@choerodon/dataset';
 import TreeNode, { TreeNodeProps } from './TreeNode';
 import { NodeElement, Key, DataNode, DataEntity, NodeInstance, FlattenNode, Direction } from './interface';
 import { TreeProps, AllowDrop } from './Tree';
