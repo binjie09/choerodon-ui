@@ -117,6 +117,7 @@ export type Config = {
   modalSectionBorder?: boolean;
   modalAutoCenter?: boolean;
   modalOkFirst?: boolean;
+  modalType?: string;
   drawerOkFirst?: boolean;
   modalButtonProps?: ButtonProps;
   modalKeyboard?: boolean;
@@ -220,6 +221,8 @@ const globalConfig: ObservableMap<ConfigKeys, Config[ConfigKeys]> = observable.m
   ['tableAutoHeightDiff', 80],
   ['modalSectionBorder', true],
   ['modalOkFirst', true],
+  ['modalType', 'yqcloud']
+  // @ts-ignore
   ['modalAutoCenter', false],
   ['drawerOkFirst', undefined],
   ['modalKeyboard', true],

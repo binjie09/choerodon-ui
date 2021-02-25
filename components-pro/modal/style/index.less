@@ -93,6 +93,9 @@
     top: 0;
     right: 0;
     bottom: 0;
+    &-footer {
+      
+    }
   }
 
   &-header-button {
@@ -109,7 +112,11 @@
     outline: 0;
     cursor: pointer;
     transition: color 0.3s;
-
+    &.close {
+      width: 0.24rem;
+      height: 0.24rem;
+      margin-bottom: 0.26rem;
+    }
     &:focus,
     &:hover {
       color: #444;

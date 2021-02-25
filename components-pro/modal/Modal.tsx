@@ -134,7 +134,7 @@ export default class Modal extends ViewComponent<ModalProps> {
     closable: false,
     movable: true,
     maskClosable: false,
-    mask: true,
+    mask: getConfig('modalType') !== 'yqcloud',
     keyboardClosable: true,
     okButton: true,
     okCancel: true,
@@ -316,6 +316,7 @@ export default class Modal extends ViewComponent<ModalProps> {
       [`${prefixCls}-center`]: !drawer && !('left' in style || 'right' in style) && !this.offset,
       [`${prefixCls}-fullscreen`]: fullScreen,
       [`${prefixCls}-drawer`]: drawer,
+      [`${prefixCls}-drawer-yqcloud`]: getConfig('modalType') === 'yqcloud',
       [`${prefixCls}-border`]: border,
       [`${prefixCls}-drawer-${drawerTransitionName}`]: drawer,
       [`${prefixCls}-auto-center`]: autoCenter,
@@ -334,7 +335,7 @@ export default class Modal extends ViewComponent<ModalProps> {
         <div ref={this.contentReference} className={`${prefixCls}-content`} style={contentStyle}>
           {header}
           {body}
-          {footer}
+          {getConfig('modalType') === 'yqcloud' ? null : footer }
         </div>
       </div>
     );
@@ -447,6 +448,7 @@ export default class Modal extends ViewComponent<ModalProps> {
         className: classNames(`${prefixCls}-header`, {
           [`${prefixCls}-movable`]: movable && !fullScreen && !drawer,
           [`${prefixCls}-title-none`]: !title,
+          [`${prefixCls}-no-border`]: getConfig('modalType') === 'yqcloud',
         }),
       };
       if (movable && !fullScreen && !drawer) {
@@ -466,6 +468,13 @@ export default class Modal extends ViewComponent<ModalProps> {
       props: { closable },
     } = this;
     if (closable) {
+      if (getConfig('modalType') === 'yqcloud') {
+        return (
+          <button type="button" className={`close ${prefixCls}-header-button`} onClick={this.handleCancel}>
+            <Icon type="close" />
+          </button>
+        );
+      }
       return (
         <button type="button" className={`${prefixCls}-header-button`} onClick={this.handleCancel}>
           <Icon type="close" />
@@ -513,15 +522,33 @@ export default class Modal extends ViewComponent<ModalProps> {
 
   getDefaultHeader = (title, closeButton: ReactNode, _okBtn: ReactElement<Button>, _cancelBtn: ReactElement<Button>) => {
     const { prefixCls } = this;
+    const {
+      footer = this.getDefaultFooter,
+    } = this.props;
+
     if (title || closeButton) {
-      return (
-        <>
-          <div className={`${prefixCls}-title`}>{title}</div>
-          <div className={`${prefixCls}-header-buttons`}>
+      if (getConfig('modalType') === 'yqcloud') {
+        return (
+          <div>
             {closeButton}
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <div className={`${prefixCls}-title`}>{title}</div>
+              <div className={`${prefixCls}-header-buttons-footer`}>
+                {typeof footer === 'function' ? footer(this.okBtn, this.cancelBtn) : footer}
+              </div>
+            </div>
           </div>
-        </>
-      );
+        );
+      } else {
+        return (
+          <>
+            <div className={`${prefixCls}-title`}>{title}</div>
+            <div className={`${prefixCls}-header-buttons`}>
+              {closeButton}
+            </div>
+          </>
+        );
+      }
     }
   };
 

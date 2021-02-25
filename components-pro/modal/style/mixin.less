@@ -6,7 +6,10 @@
     top: 0;
     margin: 0;
     transition: margin-right @animation-duration-slow @ease-in-out;
-
+    &-yqcloud {
+      height: calc(100% - 106px);
+      top: 106px;
+    }
     &-slide-right,
     &-slide-left {
       width: 5.2rem;
@@ -69,6 +72,9 @@
 .border-header() {
   &-border &-header {
     border-bottom: @border-width-base @border-style-base @border-color-base;
+  }
+  &-no-border {
+    border: none !important;
   }
 }
 

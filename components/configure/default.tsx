@@ -35,6 +35,7 @@ const defaults = {
   tableCommandProps: defaultButtonProps,
   modalSectionBorder: true,
   modalOkFirst: true,
+  modalType: 'yqcloud',
   buttonColor: ButtonColor.default,
   buttonFuncType: FuncType.raised,
   renderEmpty: defaultRenderEmpty,
